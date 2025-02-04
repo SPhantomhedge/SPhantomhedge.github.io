@@ -88,50 +88,56 @@ nav ul li a {
     color: #003366;
 }s
 
-/* Team Section Styles */
+/* General Styles */
 #team {
     padding: 60px 20px;
-    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Background gradient */
-    color: white;
+    background: #f4f4f4; /* Light background for the section */
     text-align: center;
 }
 
 .section-title h2 {
     font-size: 36px;
     margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
+/* 3D Hover Effect for Team Member */
 .team-member {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    perspective: 1500px; /* Adds depth for 3D effect */
+    margin-bottom: 40px;
 }
 
-.team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.team-member-content {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, box-shadow 0.5s;
+    padding: 30px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.team-member:hover .team-member-content {
+    transform: rotateY(20deg) rotateX(10deg); /* 3D rotation on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .team-member-photo {
-    flex-shrink: 0;
-    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
 .team-member-photo img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #fff;
+    border: 5px solid #ffcc00;
     transition: transform 0.3s ease;
 }
 
@@ -140,42 +146,49 @@ nav ul li a {
 }
 
 .team-member-info {
-    max-width: 500px;
-    color: white;
+    color: #333;
 }
 
 .team-member-info h3 {
-    font-size: 28px;
+    font-size: 24px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
     margin-bottom: 10px;
-    font-weight: 600;
+    color: #1c1c1c;
 }
 
 .team-member-info p {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 14px;
     line-height: 1.5;
+    color: #666;
 }
 
 .team-member-info a {
     color: #ffcc00;
-    font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .team-member-info a:hover {
-    color: #ffbb33; /* Hover effect for links */
+    color: #ffbb33;
     text-decoration: underline;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .team-member {
-        flex-direction: column;
+        display: block;
+        margin: 0 auto;
     }
 
-    .team-member-photo {
-        margin-right: 0;
-        margin-bottom: 20px;
+    .team-member-content {
+        width: 80%;
+        height: auto;
+    }
+
+    .team-member-photo img {
+        width: 100px;
+        height: 100px;
     }
 }
 
