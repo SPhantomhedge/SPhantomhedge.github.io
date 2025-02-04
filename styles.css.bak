@@ -88,54 +88,6 @@ nav ul li a {
     color: #003366;
 }s
 
-/* Team Section Styles */
-#team {
-    padding: 40px;
-    background-color: #f4f4f4;
-}
-
-.team-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.team-member-photo {
-    flex-shrink: 0;
-    margin-right: 20px;
-}
-
-.team-member-photo img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.team-member-info {
-    max-width: 500px;
-}
-
-.team-member-info h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.team-member-info p {
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-
-.team-member-info a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.team-member-info a:hover {
-    text-decoration: underline;
-}
-
-
 /* Footer Section Styling */
 footer {
     background-color: #003366;
