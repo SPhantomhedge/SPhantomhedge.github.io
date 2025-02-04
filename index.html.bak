@@ -1,1 +1,89 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhantomHedge UG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+        header {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: #222;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: url('energy-theme.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .footer {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>PhantomHedge UG</header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#approach">Investment Approach</a>
+        <a href="#insights">Insights & Research</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Investing in the Energy of the Future</h1>
+        <p>PhantomHedge UG focuses on long-term value creation in the energy sector.</p>
+    </div>
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>We are an investment company focused on the energy sector, leveraging a risk-managed approach.</p>
+    </div>
+    <div class="section" id="approach">
+        <h2>Investment Approach</h2>
+        <p>Sector Focus | Risk Management | Long-Term Vision</p>
+    </div>
+    <div class="section" id="insights">
+        <h2>Insights & Research</h2>
+        <p>Latest market trends and research updates.</p>
+    </div>
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email: info@phantomhedge.de</p>
+    </div>
+    <div class="footer">
+        &copy; 2025 PhantomHedge UG. All rights reserved.
+    </div>
+</body>
+</html>
+
