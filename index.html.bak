@@ -38,7 +38,7 @@
         <div class="section-title">
             <h2>About PhantomHedge i.G</h2>
         </div>
-        <p>We are an investment firm focused on the energy sector, utilizing advanced risk-managed strategies to deliver sustainable growth for our investors. Our approach is rooted in market expertise and a commitment to transparency.</p>
+        <p>We are an investment firm focused on the energy and technologies of futures, utilizing advanced risk and market neutral strategies to deliver sustainable growth for our capital while all along efficiently allocating the capital to the high impact industries. Our approach is rooted in market expertise and a commitment to transparency.</p>
     </section>
 
     <!-- Services Section -->
@@ -48,11 +48,14 @@
         </div>
         <div class="service-item">
             <h3>Energy Sector Focus</h3>
-            <p>We focus on high-potential energy investments, including nuclear and renewable energy projects.</p>
+            <p>We focus on high-potential energy investments, including all the aspects of value chain within energy supply and demand.</p>
         </div>
+		<div class="service-item">
+			<h3>Technology Sector Focus</h3>
+			<p>We focus on allocating our capital to industries developing advanced technologies which drive humanity further into the future. Industries and products are identified and analysed leveraging our qualification along with our long term experience from working within the sector.</p>
         <div class="service-item">
             <h3>Risk-Managed Approach</h3>
-            <p>Our unique risk management framework ensures portfolio stability through market fluctuations.</p>
+            <p>Our unique risk management framework ensures portfolio stability through market fluctuations. We achieve this by focusing on highly liquid investments and derivative based dynamic hedgings.</p>
         </div>
     </section>
 
