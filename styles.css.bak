@@ -103,11 +103,32 @@ nav ul li a {
     letter-spacing: 1px;
 }
 
+/* General Styles */
+#team {
+    padding: 60px 20px;
+    background: #f4f4f4; /* Light background for the section */
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    height: 100vh;            /* Full viewport height */
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 /* 3D Hover Effect for Team Member */
 .team-member {
     display: inline-block;
     perspective: 1500px; /* Adds depth for 3D effect */
     margin-bottom: 40px;
+    margin-left: 20px;  /* Space between team members */
+    margin-right: 20px; /* Space between team members */
 }
 
 .team-member-content {
@@ -176,9 +197,14 @@ nav ul li a {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    #team {
+        height: auto;  /* Allow content to flow naturally */
+        flex-direction: column; /* Stack team members vertically */
+    }
+
     .team-member {
         display: block;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .team-member-content {

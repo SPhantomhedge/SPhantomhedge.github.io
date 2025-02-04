@@ -108,10 +108,8 @@ nav ul li a {
     padding: 60px 20px;
     background: #f4f4f4; /* Light background for the section */
     text-align: center;
-    display: flex;
-    justify-content: center;  /* Center content horizontally */
-    align-items: center;      /* Center content vertically */
-    height: 100vh;            /* Full viewport height */
+    display: block;
+    margin: 0 auto;
 }
 
 .section-title h2 {
@@ -122,13 +120,20 @@ nav ul li a {
     letter-spacing: 1px;
 }
 
-/* 3D Hover Effect for Team Member */
+/* Center the Team Members */
+.team-container {
+    display: flex;
+    justify-content: center; /* Center the team members horizontally */
+    flex-wrap: wrap;         /* Allow wrapping if there are many members */
+    gap: 20px;               /* Space between team members */
+    margin: 0 auto;          /* Center the container */
+    max-width: 1200px;       /* Limit max width */
+}
+
 .team-member {
     display: inline-block;
     perspective: 1500px; /* Adds depth for 3D effect */
     margin-bottom: 40px;
-    margin-left: 20px;  /* Space between team members */
-    margin-right: 20px; /* Space between team members */
 }
 
 .team-member-content {
@@ -142,6 +147,7 @@ nav ul li a {
     position: relative;
     overflow: hidden;
     text-align: center;
+    margin: 10px;
 }
 
 .team-member:hover .team-member-content {
@@ -194,6 +200,28 @@ nav ul li a {
     color: #ffbb33;
     text-decoration: underline;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #team {
+        padding: 40px 10px; /* Adjust padding for mobile */
+    }
+
+    .team-container {
+        flex-direction: column; /* Stack team members vertically on small screens */
+    }
+
+    .team-member-content {
+        width: 80%; /* Adjust width for mobile */
+        height: auto;
+    }
+
+    .team-member-photo img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
