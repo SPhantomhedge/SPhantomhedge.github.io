@@ -38,7 +38,7 @@
         <div class="section-title">
             <h2>About PhantomHedge</h2>
         </div>
-        <p>We are an investment firm focused on the energy and technologies of futures, utilizing advanced risk and market neutral strategies to deliver sustainable growth for our capital while all along efficiently allocating the capital to the high impact industries. Our approach is rooted in market expertise and a commitment to transparency.</p>
+        <p>PhantomHedge UG is a private investment entity focused on energy and future technologies. We conduct in-depth research and apply advanced risk management techniques to optimize our proprietary capital allocation. Our approach is guided by market expertise, data-driven analysis, and a commitment to transparency.</p>
     </section>
 
     <!-- Services Section -->
@@ -65,19 +65,24 @@
 		<div class="section-title">
 			<h2>Our Team</h2>
 		</div>
-		<div class="team-member">
-			<div class="team-member-photo">
-				<img src="ProfilePhoto.jfif" alt="Sai Raghava Reddy Ganapa">
+		<div class="team-container">
+			<div class="team-member">
+				<div class="team-member-content">
+					<div class="team-member-photo">
+						<img src="ProfilePhoto.jfif" alt="Sai Raghava Reddy Ganapa">
+					</div>
+					<div class="team-member-info">
+						<h3>Sai Raghava Reddy Ganapa</h3>
+						<p>Founder & Investment Analyst</p>
+						<p>Email: <a href="mailto:sairaghavaganapa@phantomhedge.de">sairaghavaganapa@phantomhedge.de</a></p>
+						<p>LinkedIn: <a href="https://www.linkedin.com/in/sairaghavaganapa/" target="_blank">Sai Raghava Reddy Ganapa</a></p>
+					</div>
+				</div>
 			</div>
-			<div class="team-member-info">
-				<h3>Sai Raghava Reddy Ganapa</h3>
-				<p>Founder & Investment Analyst</p>
-				<p>We specialize in creating innovative, risk-managed investment strategies within the energy and technologies sector.</p>
-				<p>Email: <a href="mailto:sairaghavaganapa@phantomhedge.de">sairaghavaganapa@phantomhedge.de</a></p>
-				<p>LinkedIn: <a href="https://www.linkedin.com/in/sairaghavaganapa/" target="_blank">Sai Raghava Reddy Ganapa</a></p>
-			</div>
+			<!-- Add more team members here if needed -->
 		</div>
 	</section>
+
 
 
 
