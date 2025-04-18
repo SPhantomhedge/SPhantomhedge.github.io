@@ -15,7 +15,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #003366;
+    background-color: #000000;
     padding: 20px;
     color: #fff;
 }
@@ -66,10 +66,10 @@ nav ul li a {
 
 /* About Section Styling */
 #about {
-    background-color: #111111;
+    background-color: #000000;
     padding: 50px 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: #000000;
 }
 
 #about p {
@@ -116,7 +116,7 @@ nav ul li a {
 /* General Styles */
 #team {
     padding: 60px 20px;
-    background: #f4f4f4; /* Light background for the section */
+    background-color: #000000; /* Light background for the section */
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -271,14 +271,14 @@ nav ul li a {
 
 /* Footer Section Styling */
 footer {
-    background-color: #003366;
+    background-color: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: #00bfff;
+    background-color: #000000;
     color: #fff;
     text-decoration: none;
 }
