@@ -46,7 +46,7 @@ nav ul li a {
     background: url('hero-image.jpg') no-repeat center center/cover;
     padding: 100px 20px;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 #hero h1 {
@@ -230,7 +230,7 @@ nav ul li a {
     }
 
     .team-member-content {
-    background-color: #1a1a1a;
+    
     color: #f1f1f1;
         width: 80%; /* Adjust width for mobile */
         height: auto;
@@ -281,5 +281,5 @@ footer a {
     background-color: #000000;
     color: #fff;
     text-decoration: none;
-    
+
 }
