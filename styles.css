@@ -1,3 +1,4 @@
+
 /* Basic reset and layout */
 * {
     margin: 0;
@@ -8,7 +9,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* Header Styling */
@@ -33,6 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
+    color: #00bfff;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -52,6 +55,8 @@ nav ul li a {
 
 .cta-button {
     background-color: #ff6600;
+    color: #ffffff;
+    background-color: #ff6600;
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
@@ -61,6 +66,7 @@ nav ul li a {
 
 /* About Section Styling */
 #about {
+    background-color: #111111;
     padding: 50px 20px;
     text-align: center;
     background-color: #fff;
@@ -73,11 +79,15 @@ nav ul li a {
 
 /* Services Section Styling */
 #services {
+    background-color: #111111;
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .service-item {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
     background-color: #fff;
     padding: 20px;
     margin: 10px 0;
@@ -137,6 +147,8 @@ nav ul li a {
 }
 
 .team-member-content {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
     background: #ffffff;
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -151,6 +163,8 @@ nav ul li a {
 }
 
 .team-member:hover .team-member-content {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
     transform: rotateY(20deg) rotateX(10deg); /* 3D rotation on hover */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
@@ -173,10 +187,12 @@ nav ul li a {
 }
 
 .team-member-info {
+    color: #e0e0e0;
     color: #333;
 }
 
 .team-member-info h3 {
+    color: #ffffff;
     font-size: 24px;
     font-family: 'Segoe UI', sans-serif;
     font-weight: 700;
@@ -185,12 +201,14 @@ nav ul li a {
 }
 
 .team-member-info p {
+    color: #cccccc;
     font-size: 14px;
     line-height: 1.5;
     color: #666;
 }
 
 .team-member-info a {
+    color: #00bfff;
     color: #ffcc00;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -212,6 +230,8 @@ nav ul li a {
     }
 
     .team-member-content {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
         width: 80%; /* Adjust width for mobile */
         height: auto;
     }
@@ -236,6 +256,8 @@ nav ul li a {
     }
 
     .team-member-content {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
         width: 80%;
         height: auto;
     }
@@ -256,6 +278,7 @@ footer {
 }
 
 footer a {
+    color: #00bfff;
     color: #fff;
     text-decoration: none;
 }
