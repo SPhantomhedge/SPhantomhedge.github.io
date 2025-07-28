@@ -32,7 +32,7 @@
       border-bottom: 1px solid #e0e0e0;
     }
     header img {
-      height: 192px;
+      height: 160px;
     }
     nav a {
       margin-left: 2rem;
@@ -44,9 +44,13 @@
       text-decoration: underline;
     }
     .hero {
-      padding: 6rem 2rem;
+      padding: 4rem 2rem 2rem;
       text-align: center;
       background-color: white;
+    }
+    .hero .center-logo img {
+      max-width: 320px;
+      margin-bottom: 2rem;
     }
     .hero h1 {
       font-size: 3rem;
@@ -58,54 +62,6 @@
       color: #333;
       max-width: 700px;
       margin: 0 auto;
-    }
-    .section {
-      max-width: 1000px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-    }
-    .section h2 {
-      font-size: 2rem;
-      color: var(--blue-dark);
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .product-box {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease;
-    }
-    .product-box:hover {
-      transform: translateY(-5px);
-    }
-    .product-box h3 {
-      color: var(--blue-light);
-      margin-bottom: 0.5rem;
-    }
-    .product-box p {
-      color: #333;
-    }
-    .cta {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-color: white;
-    }
-    .cta button {
-      background-color: var(--blue-light);
-      color: white;
-      font-size: 1rem;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 1rem;
     }
     footer {
       background-color: var(--blue-dark);
@@ -122,7 +78,7 @@
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="logo.png" alt="Phantom Hedge Logo"></a>
+    <a href="index.html"><img src="02_4_Main Logo.png" alt="Phantom Hedge Logo"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -131,41 +87,11 @@
   </header>
 
   <section class="hero">
+    <div class="center-logo">
+      <img src="02_6_Text.png" alt="Phantom Hedge Text Logo">
+    </div>
     <h1>Built for Us. Now Shared with You.</h1>
     <p>Phantom Hedge develops AI-native risk and execution infrastructure, originally designed to support our internal capital management. Now we’re opening that capability to forward-thinking fund managers.</p>
-  </section>
-
-  <section class="section">
-    <h2>Why We Built Our Own</h2>
-    <p style="text-align: center; max-width: 800px; margin: 0 auto;">Most risk tools we found were reactive and oversimplified. As active investors, we needed infrastructure that anticipates, adapts, and integrates deeply into our decision loop. That’s why we built Phantom RiskOS and Trade Intelligence from scratch — engineered around volatility structure, correlation breakdowns, and behavioral stress patterns.</p>
-  </section>
-
-  <section class="section">
-    <h2>Our Product Suite</h2>
-    <div class="product-grid">
-      <div class="product-box">
-        <h3>Phantom RiskOS</h3>
-        <p>Forward-looking diagnostics for regime shifts, risk clusters, and exposure mapping — designed to give managers a structural edge before stress emerges.</p>
-      </div>
-      <div class="product-box">
-        <h3>Phantom Trade Intelligence</h3>
-        <p>Execution support system with dynamic risk bands, volatility-driven sizing, and market-aware trade scoring. Built for precision under uncertainty.</p>
-      </div>
-      <div class="product-box">
-        <h3>Agentic AI</h3>
-        <p>Autonomous agents that scan sentiment, fundamentals, and price behavior to forecast and rank tactical signals — integrated within both RiskOS and Trade Intelligence.</p>
-      </div>
-      <div class="product-box">
-        <h3>Phantom AI Marketplace <span style="font-size: 0.9em; color: #666;">(Coming 2026)</span></h3>
-        <p>Plug-and-play model marketplace for institutional AI — enabling developers to share models with asset managers under secure, auditable, and validated conditions.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <h2>Join Our Insider Circle</h2>
-    <p>We’re inviting early adopters and technical collaborators to preview our platform and shape the future of AI-native risk and trade infrastructure.</p>
-    <button onclick="window.location.href='mailto:info@phantomhedge.de'">Request Access</button>
   </section>
 
   <footer>
