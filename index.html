@@ -30,14 +30,22 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #e0e0e0;
+      position: relative;
     }
     .header-logo {
       display: flex;
       align-items: center;
     }
-    .header-logo img {
+    .header-logo a img {
       height: 64px;
-      margin-right: 1rem;
+    }
+    .header-center-logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .header-center-logo img {
+      height: 160px;
     }
     nav a {
       margin-left: 2rem;
@@ -114,7 +122,9 @@
   <header>
     <div class="header-logo">
       <a href="index.html"><img src="02_4_Main Logo.png" alt="Shield Logo"></a>
-      <img src="02_6_Text.png" alt="Phantom Hedge Text Logo" style="height: 48px;">
+    </div>
+    <div class="header-center-logo">
+      <img src="02_6_Text.png" alt="Phantom Hedge Text Logo">
     </div>
     <nav>
       <a href="index.html">Home</a>
