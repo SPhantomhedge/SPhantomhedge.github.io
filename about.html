@@ -4,42 +4,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Phantom Hedge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --blue-dark: #002B80;
+      --blue-light: #007BFF;
+      --gray-bg: #f8f9fc;
+      --text-color: #1a1a1a;
+    }
     body {
       font-family: 'Inter', sans-serif;
-      background: #f4f8ff;
-      color: #1a1a1a;
+      background-color: var(--gray-bg);
+      color: var(--text-color);
+      margin: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: white;
       padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    header img {
+      height: 64px;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--blue-dark);
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 4rem auto;
+      padding: 0 2rem;
     }
-    h1 {
-      color: #002B80;
-      font-size: 2.2rem;
+    .section h1 {
+      color: var(--blue-dark);
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      text-align: center;
     }
-    h2 {
-      color: #007BFF;
+    .section h2 {
+      color: var(--blue-light);
       margin-top: 2rem;
     }
-    p {
+    .section p {
       margin: 1rem 0;
-      line-height: 1.6;
+      line-height: 1.7;
+    }
+    footer {
+      background-color: var(--blue-dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: white;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>About Phantom Hedge</h1>
-  <p><strong>Phantom Hedge</strong> began as a response to a simple but stubborn problem: traditional risk management tools were not built for the pace and complexity of modern markets. As engineers and strategists managing proprietary capital, we needed tools that could adapt, anticipate, and protect — not just explain what went wrong after the fact.</p>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Phantom Hedge Logo"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+    </nav>
+  </header>
 
-  <h2>Our Origins</h2>
-  <p>Phantom Hedge UG was founded by a team with deep experience in embedded systems, simulations, and portfolio strategy. With backgrounds spanning financial modeling, engineering systems, and AI architecture, we brought a first-principles mindset to a field that had become reliant on legacy tools.</p>
+  <div class="section">
+    <h1>About Phantom Hedge</h1>
+    <p><strong>Phantom Hedge</strong> was born from necessity — not theory. In managing our own proprietary capital, we encountered consistent blind spots in existing risk infrastructure. Static models, backward-looking assumptions, and brittle integration held us back. So we built the tools we needed from the ground up.</p>
 
-  <h2>Mission</h2>
-  <p>To develop resilient, adaptive investment infrastructure that reflects the realities of today’s market regimes — and make them available to fund managers who need more than historical data and static models.</p>
+    <h2>Our Origins</h2>
+    <p>With roots in engineering, simulation, and AI architecture, our founding team brought a first-principles mindset to a field long dominated by convention. We believe financial infrastructure should adapt to structural change, not just explain it in hindsight.</p>
 
-  <h2>Vision</h2>
-  <p>We envision a future where asset managers, regardless of size, have access to AI-native tools that not only forecast risk but also guide execution, adapt to structural shifts, and scale with strategy complexity.</p>
+    <h2>Mission</h2>
+    <p>To develop forward-compatible, AI-native risk and execution systems that give fund managers the insight edge they need to navigate an increasingly volatile world.</p>
 
-  <p>Our belief is simple: <strong>risk isn’t just a constraint — it’s an input</strong>. And systems built with this philosophy deserve to be shared with those who manage capital seriously.</p>
+    <h2>Vision</h2>
+    <p>We envision a future where managers — regardless of size — operate with dynamic, real-time, behaviorally informed tools. Tools that don’t just show where risk is, but where it’s heading.</p>
+
+    <p>We started building for ourselves. We’re now ready to share what we’ve learned.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Phantom Hedge UG | <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a>
+  </footer>
 </body>
 </html>

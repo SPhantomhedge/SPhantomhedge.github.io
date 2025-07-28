@@ -32,13 +32,16 @@
       border-bottom: 1px solid #e0e0e0;
     }
     header img {
-      height: 48px;
+      height: 64px;
     }
     nav a {
       margin-left: 2rem;
       text-decoration: none;
       color: var(--blue-dark);
       font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .hero {
       padding: 6rem 2rem;
@@ -64,22 +67,30 @@
     .section h2 {
       font-size: 2rem;
       color: var(--blue-dark);
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
     }
-    .grid {
+    .product-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
     }
-    .card {
-      background-color: white;
+    .product-box {
+      background: white;
       padding: 2rem;
-      border-radius: 8px;
+      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
     }
-    .card h3 {
+    .product-box:hover {
+      transform: translateY(-5px);
+    }
+    .product-box h3 {
       color: var(--blue-light);
-      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .product-box p {
+      color: #333;
     }
     .cta {
       text-align: center;
@@ -103,20 +114,15 @@
       padding: 2rem 1rem;
       font-size: 0.9rem;
     }
-    @media(min-width: 768px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      nav {
-        display: flex;
-        align-items: center;
-      }
+    footer a {
+      color: white;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Phantom Hedge Logo">
+    <a href="index.html"><img src="logo.png" alt="Phantom Hedge Logo"></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -131,25 +137,25 @@
 
   <section class="section">
     <h2>Why We Built Our Own</h2>
-    <p>Most risk tools we found were reactive and oversimplified. As active investors, we needed infrastructure that anticipates, adapts, and integrates deeply into our decision loop. That’s why we built Phantom RiskOS and Trade Intelligence from scratch — engineered around volatility structure, correlation breakdowns, and behavioral stress patterns.</p>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">Most risk tools we found were reactive and oversimplified. As active investors, we needed infrastructure that anticipates, adapts, and integrates deeply into our decision loop. That’s why we built Phantom RiskOS and Trade Intelligence from scratch — engineered around volatility structure, correlation breakdowns, and behavioral stress patterns.</p>
   </section>
 
   <section class="section">
-    <h2>What We’re Building</h2>
-    <div class="grid">
-      <div class="card">
+    <h2>Our Product Suite</h2>
+    <div class="product-grid">
+      <div class="product-box">
         <h3>Phantom RiskOS</h3>
         <p>Forward-looking diagnostics for regime shifts, risk clusters, and exposure mapping — designed to give managers a structural edge before stress emerges.</p>
       </div>
-      <div class="card">
+      <div class="product-box">
         <h3>Phantom Trade Intelligence</h3>
         <p>Execution support system with dynamic risk bands, volatility-driven sizing, and market-aware trade scoring. Built for precision under uncertainty.</p>
       </div>
-      <div class="card">
+      <div class="product-box">
         <h3>Agentic AI</h3>
         <p>Autonomous agents that scan sentiment, fundamentals, and price behavior to forecast and rank tactical signals — integrated within both RiskOS and Trade Intelligence.</p>
       </div>
-      <div class="card">
+      <div class="product-box">
         <h3>Phantom AI Marketplace <span style="font-size: 0.9em; color: #666;">(Coming 2026)</span></h3>
         <p>Plug-and-play model marketplace for institutional AI — enabling developers to share models with asset managers under secure, auditable, and validated conditions.</p>
       </div>
@@ -163,7 +169,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Phantom Hedge UG | <a href="mailto:info@phantomhedge.de" style="color:white; text-decoration: underline;">info@phantomhedge.de</a>
+    &copy; 2025 Phantom Hedge UG | <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a>
   </footer>
 </body>
 </html>

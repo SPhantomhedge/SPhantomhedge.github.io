@@ -4,42 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products - Phantom Hedge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --blue-dark: #002B80;
+      --blue-light: #007BFF;
+      --gray-bg: #f8f9fc;
+      --text-color: #1a1a1a;
+    }
     body {
       font-family: 'Inter', sans-serif;
-      background: #f4f8ff;
-      color: #1a1a1a;
-      padding: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h1 {
-      color: #002B80;
-      font-size: 2.2rem;
-    }
-    h2 {
-      color: #007BFF;
-      margin-top: 2rem;
-    }
-    p {
-      margin: 1rem 0;
+      background-color: var(--gray-bg);
+      color: var(--text-color);
+      margin: 0;
       line-height: 1.6;
+    }
+    header {
+      background-color: white;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    header img {
+      height: 64px;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--blue-dark);
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    .section h1 {
+      color: var(--blue-dark);
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .product-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+    .product-box:hover {
+      transform: translateY(-5px);
+    }
+    .product-box h2 {
+      color: var(--blue-light);
+      margin-top: 0;
+    }
+    .product-box p {
+      color: #333;
+    }
+    footer {
+      background-color: var(--blue-dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: white;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Our Product Suite</h1>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Phantom Hedge Logo"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+    </nav>
+  </header>
 
-  <h2>Phantom RiskOS</h2>
-  <p>A forward-looking risk intelligence platform designed to anticipate regime shifts, volatility clusters, and structural breaks. Built for real-time diagnostics, dynamic exposure management, and behavioral sensitivity — tailored to how modern portfolios behave.</p>
+  <div class="section">
+    <h1>Our Product Suite</h1>
+    <div class="product-grid">
+      <div class="product-box">
+        <h2>Phantom RiskOS</h2>
+        <p>A forward-looking risk intelligence platform designed to anticipate regime shifts, volatility clusters, and structural breaks. Built for real-time diagnostics, dynamic exposure management, and behavioral sensitivity — tailored to how modern portfolios behave.</p>
+      </div>
+      <div class="product-box">
+        <h2>Phantom Trade Intelligence</h2>
+        <p>An execution assistant platform that combines predictive modeling, volatility structure, and risk bands to guide position entry, size optimization, and dynamic hedging. Designed to reduce execution friction while amplifying strategic intent.</p>
+      </div>
+      <div class="product-box">
+        <h2>Agentic AI Systems</h2>
+        <p>We are integrating autonomous agentic workflows that scan, interpret, and respond to high-volume data streams across news, sentiment, and price movements. These systems form the foundation of forward signal discovery inside Phantom RiskOS and Trade Intelligence.</p>
+      </div>
+      <div class="product-box">
+        <h2>Phantom AI Marketplace <span style="font-size: 0.8em; color: #666;">(Coming 2026)</span></h2>
+        <p>A secure plug-and-play ecosystem where developers and quant researchers can offer AI models to institutional fund managers — with Phantom providing integration, validation, and compliance support. We enable model discovery without signal leakage or IP exposure.</p>
+      </div>
+    </div>
+  </div>
 
-  <h2>Phantom Trade Intelligence</h2>
-  <p>An execution assistant platform that combines predictive modeling, volatility structure, and risk bands to guide position entry, size optimization, and dynamic hedging. Designed to reduce execution friction while amplifying strategic intent.</p>
-
-  <h2>Agentic AI Systems</h2>
-  <p>We are integrating autonomous agentic workflows that scan, interpret, and respond to high-volume data streams across news, sentiment, and price movements. These systems form the foundation of forward signal discovery inside Phantom RiskOS and Trade Intelligence.</p>
-
-  <h2>Phantom AI Marketplace</h2>
-  <p>A secure plug-and-play ecosystem (coming 2026) where developers and quant researchers can offer AI models to institutional fund managers — with Phantom providing integration, validation, and compliance support. We enable model discovery without signal leakage or IP exposure.</p>
+  <footer>
+    &copy; 2025 Phantom Hedge UG | <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a>
+  </footer>
 </body>
 </html>
