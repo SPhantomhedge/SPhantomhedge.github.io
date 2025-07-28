@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Phantom Hedge — AI-native risk and execution systems designed for internal capital management. Now sharing our tools and philosophy with others." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phantom Hedge</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --blue-dark: #002B80;
       --blue-light: #007BFF;
-      --bg-light: #f4f8ff;
-      --text-dark: #1a1a1a;
+      --gray-bg: #f8f9fc;
+      --text-color: #1a1a1a;
     }
     * {
       margin: 0;
@@ -21,103 +19,104 @@
     }
     body {
       font-family: 'Inter', sans-serif;
-      background: var(--bg-light);
-      color: var(--text-dark);
+      background-color: var(--gray-bg);
+      color: var(--text-color);
       line-height: 1.6;
     }
     header {
-      background: var(--blue-dark);
-      color: white;
-      padding: 4rem 2rem 2rem;
-      text-align: center;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1.5rem;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
+      background-color: white;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
     }
     header img {
-      width: 160px;
-      margin-bottom: 1.5rem;
+      height: 48px;
     }
-    header h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.5rem;
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--blue-dark);
+      font-weight: 500;
     }
-    header p {
-      font-size: 1.1rem;
+    .hero {
+      padding: 6rem 2rem;
+      text-align: center;
+      background-color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--blue-dark);
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #333;
       max-width: 700px;
       margin: 0 auto;
     }
-    section {
+    .section {
       max-width: 1000px;
       margin: 4rem auto;
       padding: 0 2rem;
     }
-    section h2 {
-      font-size: 1.8rem;
+    .section h2 {
+      font-size: 2rem;
       color: var(--blue-dark);
       margin-bottom: 1rem;
     }
     .grid {
       display: grid;
+      grid-template-columns: 1fr;
       gap: 2rem;
-      margin-top: 2rem;
     }
-    .product-box {
-      background: white;
-      border-radius: 10px;
+    .card {
+      background-color: white;
       padding: 2rem;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
-    .product-box h3 {
+    .card h3 {
       color: var(--blue-light);
       margin-top: 0;
     }
-    .cta, .contact {
+    .cta {
       text-align: center;
-      margin: 5rem 2rem;
+      padding: 4rem 2rem;
+      background-color: white;
     }
     .cta button {
-      background: var(--blue-light);
+      background-color: var(--blue-light);
       color: white;
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: 6px;
       font-size: 1rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 6px;
       cursor: pointer;
-    }
-    .cta button:hover {
-      background: #0056cc;
+      margin-top: 1rem;
     }
     footer {
-      background: var(--blue-dark);
+      background-color: var(--blue-dark);
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
     }
     @media(min-width: 768px) {
       .grid {
         grid-template-columns: repeat(2, 1fr);
       }
+      nav {
+        display: flex;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
     <img src="logo.png" alt="Phantom Hedge Logo">
-    <h1>Built for Us. Now Shared with You.</h1>
-    <p>Phantom Hedge develops proprietary risk and execution systems to support how we manage our own capital — now opening select components to forward-looking fund managers.</p>
-    
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -125,50 +124,46 @@
     </nav>
   </header>
 
-  <section>
-    <h2>Where Existing Risk Systems Fall Short</h2>
-    <p>Most tools we encountered were tuned to static assumptions, lagging signals, or oversimplified exposure models. As a fund managing its own capital, we needed systems that adapt under pressure, integrate new information in real-time, and proactively surface hidden vulnerabilities.</p>
-    <p>Phantom Hedge began building internally — not as a product, but as a necessity.</p>
+  <section class="hero">
+    <h1>Built for Us. Now Shared with You.</h1>
+    <p>Phantom Hedge develops AI-native risk and execution infrastructure, originally designed to support our internal capital management. Now we’re opening that capability to forward-thinking fund managers.</p>
   </section>
 
-  <section>
-    <h2>What We’re Building Internally</h2>
+  <section class="section">
+    <h2>Why We Built Our Own</h2>
+    <p>Most risk tools we found were reactive and oversimplified. As active investors, we needed infrastructure that anticipates, adapts, and integrates deeply into our decision loop. That’s why we built Phantom RiskOS and Trade Intelligence from scratch — engineered around volatility structure, correlation breakdowns, and behavioral stress patterns.</p>
+  </section>
+
+  <section class="section">
+    <h2>What We’re Building</h2>
     <div class="grid">
-      <div class="product-box">
+      <div class="card">
         <h3>Phantom RiskOS</h3>
-        <p>Our internal platform for stress testing, forward risk modeling, and dynamic portfolio diagnostics. Developed to navigate correlation breakdowns, volatility clustering, and behavioral inflections across asset classes.</p>
+        <p>Forward-looking diagnostics for regime shifts, risk clusters, and exposure mapping — designed to give managers a structural edge before stress emerges.</p>
       </div>
-      <div class="product-box">
+      <div class="card">
         <h3>Phantom Trade Intelligence</h3>
-        <p>Execution layer designed to complement our internal strategy — surfacing trade entries, volatility-adjusted sizing, and context-aware risk bands based on near-term uncertainty.</p>
+        <p>Execution support system with dynamic risk bands, volatility-driven sizing, and market-aware trade scoring. Built for precision under uncertainty.</p>
       </div>
-      <div class="product-box">
-        <h3>Phantom AI Marketplace <span style="font-size:0.8em; color:#888;">(Coming 2026)</span></h3>
-        <p>While not yet public, we envision a shared ecosystem for vetted, plug-and-play AI models used by funds — where Phantom supports integration and oversight, not signal generation alone.</p>
+      <div class="card">
+        <h3>Agentic AI</h3>
+        <p>Autonomous agents that scan sentiment, fundamentals, and price behavior to forecast and rank tactical signals — integrated within both RiskOS and Trade Intelligence.</p>
+      </div>
+      <div class="card">
+        <h3>Phantom AI Marketplace <span style="font-size: 0.9em; color: #666;">(Coming 2026)</span></h3>
+        <p>Plug-and-play model marketplace for institutional AI — enabling developers to share models with asset managers under secure, auditable, and validated conditions.</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Built From Within. Grounded in Experience.</h2>
-    <p>These systems were not built for resale — they were born from our own constraints, frustrations, and design goals as a fund seeking asymmetric insight under uncertainty.</p>
-    <p>As we refine them further, we believe others — particularly those navigating similarly high-dimensional environments — may find value in the same risk-first philosophy.</p>
+  <section class="cta">
+    <h2>Join Our Insider Circle</h2>
+    <p>We’re inviting early adopters and technical collaborators to preview our platform and shape the future of AI-native risk and trade infrastructure.</p>
+    <button onclick="window.location.href='mailto:info@phantomhedge.de'">Request Access</button>
   </section>
 
-  <div class="cta">
-    <h2>Join Our Insider Circle</h2>
-    <p>If you share our conviction that risk deserves a front seat in capital allocation, we’d love to share what we’re working on and invite your perspective.</p>
-    <button onclick="window.location.href='mailto:info@phantomhedge.de'">Request Access</button>
-  </div>
-
-  <div class="contact">
-    <h2>Contact the Founders</h2>
-    <p>We welcome conversations, feedback, and strategic input. Reach out directly:<br><a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a></p>
-  </div>
-
   <footer>
-    &copy; 2025 Phantom Hedge UG | All rights reserved.
+    &copy; 2025 Phantom Hedge UG | <a href="mailto:info@phantomhedge.de" style="color:white; text-decoration: underline;">info@phantomhedge.de</a>
   </footer>
-
 </body>
 </html>
