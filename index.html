@@ -1,115 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PhantomHedge UG(haftungsbeschränkt) - Bold ideas, Balanced risk">
-    <title>Phantom Hedge UG(haftungsbeschränkt) </title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Phantom Hedge — AI-native risk and execution systems designed for internal capital management. Now sharing our tools and philosophy with others." />
+  <title>Phantom Hedge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue-dark: #002B80;
+      --blue-light: #007BFF;
+      --bg-light: #f4f8ff;
+      --text-dark: #1a1a1a;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--blue-dark);
+      color: white;
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+    }
+    header img {
+      width: 160px;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      color: var(--blue-dark);
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .product-box {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .product-box h3 {
+      color: var(--blue-light);
+      margin-top: 0;
+    }
+    .cta, .contact {
+      text-align: center;
+      margin: 5rem 2rem;
+    }
+    .cta button {
+      background: var(--blue-light);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .cta button:hover {
+      background: #0056cc;
+    }
+    footer {
+      background: var(--blue-dark);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    @media(min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
 </head>
-<body style="background-color: black; color: white;">
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Phantom Hedge UG(haftungsbeschränkt)">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>PhantomHedge</h1>
-            <p>Investing in the Future of Energy and Technology with a Risk-Managed Approach</p>
-            <a href="#about" class="cta-button">Learn More</a>
-        </div>
-    </section>
+  <header>
+    <img src="logo.png" alt="Phantom Hedge Logo">
+    <h1>Built for Us. Now Shared with You.</h1>
+    <p>Phantom Hedge develops proprietary risk and execution systems to support how we manage our own capital — now opening select components to forward-looking fund managers.</p>
+  </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="section-title">
-            <h2>About Phantom Hedge UG(haftungsbeschränkt)</h2>
-        </div>
-        <p>PhantomHedge UG is a private investment entity focused on energy and technology sectors relying on Quantitative strategies. We manage currently exclusively our own proprietary capital and invest within the mentioned sectors with a balanced risk management approach. Our origins along with Academic qualification are from Engineering industry equiping us with complicated quantitative and AI fundamentals that support us in developing our proprietary risk management algorithms.</p>
-    </section>
+  <section>
+    <h2>Where Existing Risk Systems Fall Short</h2>
+    <p>Most tools we encountered were tuned to static assumptions, lagging signals, or oversimplified exposure models. As a fund managing its own capital, we needed systems that adapt under pressure, integrate new information in real-time, and proactively surface hidden vulnerabilities.</p>
+    <p>Phantom Hedge began building internally — not as a product, but as a necessity.</p>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="section-title">
-            <h2>Our Services</h2>
-        </div>
-        <div class="service-item">
-            <h3>Energy Sector Focus</h3>
-            <p><a style="color: lightgray;">We believe in a balanced and sustainable approach to green energy which allows us not to limit ourselves to either only green nor fossil fuels. This provides us possibilities to go long on futuristic energy technologies while at the same time invest in traditional energy industry that is required to sustain energy demands.</a></p>
-        </div>
-		<div class="service-item">
-			<h3>Technology Sector Focus</h3>
-			<p><a style="color: lightgray;">We focus on  industries developing advanced technologies which drive humanity further into the future. Industries and products are identified and analysed leveraging our qualification along with our long term experience from working within the sector.</a></p>
-        </div>
-		<div class="service-item">
-            <h3>Risk-Managed Approach</h3>
-            <p><a style="color: lightgray;">Our unique quantitative risk management framework continuous measures the trends and volatility in the market with a goal to minimise our overall portfolio beta.</a> </p>
-        </div>
-    </section>
-	
-	<!-- Team Section -->
-	<section id="team">
-		<div class="section-title">
-			<h2>Our Team</h2>
-		</div>
-		<div class="team-container">
-			<div class="team-member">
-				<div class="team-member-content">
-					<div class="team-member-photo">
-						<img src="ProfilePhoto.jfif" alt="Sai Raghava Reddy Ganapa">
-					</div>
-					<div class="team-member-info">
-						<h3>Sai Raghava Reddy Ganapa</h3>
-						<p>Founder & Investment Analyst</p>
-						<p>Email: <a href="mailto:sairaghavaganapa@phantomhedge.de">sairaghavaganapa@phantomhedge.de</a></p>
-						<p>LinkedIn: <a href="https://www.linkedin.com/in/sairaghavaganapa/" target="_blank">Sai Raghava Reddy Ganapa</a></p>
-					</div>
-				</div>
-			</div>
-			<!-- Add more team members here if needed -->
-		</div>
-	</section>
-
-
-
-
-    <!-- Footer Section -->
-    
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2025 PhantomHedge | All rights reserved.</p>
-
-        <div id="impressum">
-            <h4>Impressum</h4>
-            <p><strong>Phantom Hedge UG (haftungsbeschränkt)</strong><br>
-            Kolonnenstr. 8<br>
-            10827 Berlin<br>
-            Deutschland</p>
-
-            <p><strong>Kontakt:</strong> <a href="mailto:info@phantomhedge.de" style="color: lightblue;">info@phantomhedge.de</a></p>
-            <p><strong>Geschäftsführer:</strong> Sai Raghava Reddy Ganapa</p>
-            <p><strong>Eingetragener Sitz:</strong> Deutschland</p>
-            <p><strong>Registergericht:</strong> Amtsgericht Charlottenburg</p>
-            <p><strong>Handelsregister Nummer:</strong> HRB 274189 B</p>
-        </div>
-
-        <p><a href="#Disclaimer" style="color: lightgray;">PhantomHedge does not provide financial services or manage third-party funds. This website is for informational purposes only and does not constitute an offer or solicitation for investments.</a></p>
+  <section>
+    <h2>What We’re Building Internally</h2>
+    <div class="grid">
+      <div class="product-box">
+        <h3>Phantom RiskOS</h3>
+        <p>Our internal platform for stress testing, forward risk modeling, and dynamic portfolio diagnostics. Developed to navigate correlation breakdowns, volatility clustering, and behavioral inflections across asset classes.</p>
+      </div>
+      <div class="product-box">
+        <h3>Phantom Trade Intelligence</h3>
+        <p>Execution layer designed to complement our internal strategy — surfacing trade entries, volatility-adjusted sizing, and context-aware risk bands based on near-term uncertainty.</p>
+      </div>
+      <div class="product-box">
+        <h3>Phantom AI Marketplace <span style="font-size:0.8em; color:#888;">(Coming 2026)</span></h3>
+        <p>While not yet public, we envision a shared ecosystem for vetted, plug-and-play AI models used by funds — where Phantom supports integration and oversight, not signal generation alone.</p>
+      </div>
     </div>
-</footer>
+  </section>
 
+  <section>
+    <h2>Built From Within. Grounded in Experience.</h2>
+    <p>These systems were not built for resale — they were born from our own constraints, frustrations, and design goals as a fund seeking asymmetric insight under uncertainty.</p>
+    <p>As we refine them further, we believe others — particularly those navigating similarly high-dimensional environments — may find value in the same risk-first philosophy.</p>
+  </section>
+
+  <div class="cta">
+    <h2>Join Our Insider Circle</h2>
+    <p>If you share our conviction that risk deserves a front seat in capital allocation, we’d love to share what we’re working on and invite your perspective.</p>
+    <button onclick="window.location.href='mailto:info@phantomhedge.de'">Request Access</button>
+  </div>
+
+  <div class="contact">
+    <h2>Contact the Founders</h2>
+    <p>We welcome conversations, feedback, and strategic input. Reach out directly:<br><a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Phantom Hedge UG | All rights reserved.
+  </footer>
 
 </body>
 </html>
