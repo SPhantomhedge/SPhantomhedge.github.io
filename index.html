@@ -12,16 +12,16 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/logo/favicon-512.png">
   <style>
     :root {
-      --bg: #030712;
-      --bg-soft: rgba(22, 30, 53, 0.55);
-      --panel: rgba(13, 21, 37, 0.7);
-      --panel-strong: rgba(19, 29, 49, 0.9);
+      --bg: #07132a;
+      --bg-soft: rgba(24, 44, 88, 0.55);
+      --panel: rgba(13, 27, 52, 0.7);
+      --panel-strong: rgba(18, 40, 74, 0.88);
       --text: #f4f6fb;
       --text-soft: #c6cedd;
       --accent: #48e1b8;
       --accent-soft: #4ac5ff;
       --line: rgba(255, 255, 255, 0.1);
-      --shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+      --shadow: 0 18px 45px rgba(4, 16, 36, 0.45);
     }
 
     * { box-sizing: border-box; }
@@ -30,9 +30,9 @@
       margin: 0;
       color: var(--text);
       background:
-        radial-gradient(1600px 900px at -10% -40%, rgba(74, 197, 255, 0.22), transparent 60%),
-        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.2), transparent 65%),
-        linear-gradient(190deg, #050912 0%, #081324 45%, #0b1a30 100%);
+        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
+        linear-gradient(190deg, #071633 0%, #0a2147 48%, #0c2c59 100%);
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
@@ -48,8 +48,8 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      backdrop-filter: blur(12px);
-      background: rgba(3, 6, 20, 0.74);
+      backdrop-filter: blur(14px);
+      background: linear-gradient(120deg, rgba(142, 190, 255, 0.95), rgba(88, 142, 235, 0.88));
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
@@ -86,7 +86,7 @@
     .navlinks a {
       padding: 0.55rem 0.8rem;
       border-radius: 12px;
-      color: var(--text-soft);
+      color: rgba(220, 234, 255, 0.78);
       font-weight: 500;
       transition: background 0.25s ease, color 0.25s ease;
     }
@@ -144,7 +144,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
       gap: clamp(2rem, 6vw, 4rem);
       align-items: center;
     }
@@ -176,11 +176,31 @@
       font-size: 0.95rem;
     }
 
+    .hero-stack {
+      display: grid;
+      gap: 1.4rem;
+    }
+
+    .hero-visual {
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: var(--shadow);
+      background: rgba(5, 18, 39, 0.6);
+    }
+
+    .hero-visual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .hero-card {
-      background: linear-gradient(150deg, rgba(74, 197, 255, 0.16), rgba(72, 225, 184, 0.08));
+      background: linear-gradient(150deg, rgba(74, 197, 255, 0.2), rgba(72, 225, 184, 0.12));
       border-radius: 28px;
       padding: 2.2rem;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: var(--shadow);
       position: relative;
       overflow: hidden;
@@ -255,18 +275,33 @@
 
     .feature-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1.2rem;
     }
 
     .feature-card {
-      background: rgba(9, 16, 32, 0.8);
+      background: rgba(9, 20, 40, 0.78);
       border-radius: 24px;
       padding: 1.6rem;
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
       display: grid;
       gap: 0.85rem;
+    }
+
+    .feature-card figure {
+      margin: 0;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(2, 12, 28, 0.35);
+    }
+
+    .feature-card figure img {
+      display: block;
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
     }
 
     .feature-card h3 {
@@ -291,10 +326,87 @@
       font-size: 0.75rem;
       padding: 0.35rem 0.65rem;
       border-radius: 999px;
-      border: 1px solid rgba(74, 197, 255, 0.3);
-      background: rgba(74, 197, 255, 0.12);
+      border: 1px solid rgba(74, 197, 255, 0.35);
+      background: rgba(74, 197, 255, 0.14);
       color: rgba(182, 222, 255, 0.95);
       letter-spacing: 0.2px;
+    }
+
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+      margin-top: clamp(32px, 5vw, 48px);
+    }
+
+    .insight-media {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: clamp(28px, 5vw, 44px);
+    }
+
+    .insight-media figure {
+      margin: 0;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
+      position: relative;
+    }
+
+    .insight-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .insight-media span {
+      position: absolute;
+      left: 1.1rem;
+      bottom: 1.1rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.2px;
+      background: rgba(7, 19, 42, 0.78);
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .capability-card {
+      background: rgba(9, 20, 40, 0.78);
+      border-radius: 24px;
+      padding: 1.6rem 1.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+    }
+
+    .capability-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.9rem;
+      font-size: 1.05rem;
+    }
+
+    .capability-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.55rem;
+      font-size: 0.92rem;
+      color: rgba(203, 214, 231, 0.82);
+    }
+
+    .capability-card li::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(74, 197, 255, 0.6);
+      margin-right: 0.55rem;
+      transform: translateY(-2px);
     }
 
     .stat-strip {
@@ -383,6 +495,39 @@
       gap: 1.4rem;
     }
 
+    .visual-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+      margin-top: clamp(32px, 5vw, 48px);
+    }
+
+    .visual-card {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: var(--shadow);
+      min-height: 220px;
+      background: rgba(5, 18, 39, 0.5);
+      display: grid;
+    }
+
+    .visual-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .visual-card span {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 1.1rem 1.4rem;
+      background: linear-gradient(180deg, transparent, rgba(4, 12, 28, 0.78));
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
     .quote p {
       font-family: "Space Grotesk", Inter, sans-serif;
       font-size: clamp(1.4rem, 3.1vw, 1.8rem);
@@ -421,7 +566,8 @@
     footer {
       padding: 60px 0 70px;
       border-top: 1px solid rgba(255, 255, 255, 0.04);
-      color: rgba(168, 186, 210, 0.8);
+      color: rgba(168, 186, 210, 0.85);
+      background: rgba(4, 14, 30, 0.72);
     }
 
     footer .cols {
@@ -438,7 +584,7 @@
     }
 
     footer a {
-      color: rgba(185, 204, 228, 0.78);
+      color: rgba(185, 204, 228, 0.85);
       font-size: 0.92rem;
       display: inline-block;
       margin-bottom: 0.45rem;
@@ -468,6 +614,16 @@
       display: inline-block;
     }
 
+    @media (max-width: 1080px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-stack {
+        order: -1;
+      }
+    }
+
     @media (max-width: 960px) {
       .hero-grid,
       .split,
@@ -485,7 +641,6 @@
 
       nav { flex-wrap: wrap; gap: 1rem; }
       .navlinks { flex-wrap: wrap; justify-content: flex-start; }
-      .hero-card { order: -1; }
     }
 
     @media (max-width: 640px) {
@@ -530,33 +685,38 @@
       <div class="container hero-grid">
         <div>
           <span class="badge">Phantom RiskOS</span>
-          <h1>Bold ideas. Disciplined risk. Portfolios built for the next decade.</h1>
-          <p class="lead">Phantom RiskOS is our cloud-native, API-first risk management platform that helps institutional teams see forward-looking exposures before they become surprises.</p>
+          <h1>Risk engineered for conviction-sized decisions.</h1>
+          <p class="lead">Phantom RiskOS is the cloud-native, API-first risk management platform that lets institutional analysts interrogate every security with forward-looking VaR, stress, and AI-based decomposition before capital is committed.</p>
           <div class="actions">
             <a class="btn primary" href="#platform">Explore the platform</a>
-            <a class="btn" href="#about">Meet the team</a>
+            <a class="btn" href="#contact">Talk to us</a>
           </div>
-          <p class="note">Trusted by asset managers preparing for volatile regimes and new opportunities.</p>
+          <p class="note">Trusted by allocators who demand explainable risk intelligence, regulatory readiness, and tail-risk guardrails.</p>
         </div>
-        <div class="hero-card" aria-label="Snapshot of platform outcomes">
-          <h3>Real-time guardrails for concentrated bets</h3>
-          <p>Layer scenario forecasting with automated hedging to unlock conviction sized trades without compromising drawdown limits.</p>
-          <div class="metric-group">
-            <div class="metric">
-              <strong>92%</strong>
-              <span>Drawdown scenarios modeled before entry</span>
-            </div>
-            <div class="metric">
-              <strong>35 bps</strong>
-              <span>Average cost saved per hedge rotation</span>
-            </div>
-            <div class="metric">
-              <strong>&lt;5 min</strong>
-              <span>From signal to execution checklist</span>
-            </div>
-            <div class="metric">
-              <strong>24/7</strong>
-              <span>Monitoring with audit-ready trails</span>
+        <div class="hero-stack">
+          <figure class="hero-visual" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80" alt="Abstract data visualization representing financial risk insights" loading="lazy">
+          </figure>
+          <div class="hero-card" aria-label="Snapshot of platform outcomes">
+            <h3>Forward-looking control, live in production</h3>
+            <p>Historical VaR / ES, Monte Carlo VaR, and AI-native regime detection converge to keep drawdowns within mandate while enabling dynamic hedging automation.</p>
+            <div class="metric-group">
+              <div class="metric">
+                <strong>150+</strong>
+                <span>Historical &amp; hypothetical stress scenarios ready-to-run</span>
+              </div>
+              <div class="metric">
+                <strong>&lt;3 min</strong>
+                <span>From Kafka-native signal to HJB-optimised hedge</span>
+              </div>
+              <div class="metric">
+                <strong>100%</strong>
+                <span>Audit trail coverage for Basel, Solvency II &amp; UCITS</span>
+              </div>
+              <div class="metric">
+                <strong>Global</strong>
+                <span>Cloud deployment options with established client trust</span>
+              </div>
             </div>
           </div>
         </div>
@@ -567,54 +727,154 @@
       <div class="container">
         <div class="section-header">
           <h2>The platform to engineer conviction</h2>
-          <p>Give every portfolio decision a forward-looking risk decomposition. Phantom RiskOS lets analysts interrogate securities with scenario intelligence, automated guardrails, and explainable AI in one workspace.</p>
+          <p>Phantom RiskOS unifies historical VaR / ES, Monte Carlo VaR, AI-native regime detection, and dynamic hedging (HJB optimisation) so every analyst can see forward-looking risk narratives before execution.</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
-            <h3>RiskOS Scenario Intelligence</h3>
-            <p>Forward-looking engines detect regime shifts, calibrate hedges, and stress test exposures in minutes so conviction trades stay inside guardrails.</p>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80" alt="Analyst reviewing risk dashboards" loading="lazy">
+            </figure>
+            <h3>Scenario Intelligence</h3>
+            <p>Stress Testing (Historical &amp; Hypothetical) runs alongside Backtesting &amp; Reporting so portfolio teams can pressure-test trades across volatility, sentiment, and regulatory templates.</p>
             <div class="tags">
-              <span class="tag">Dynamic Hedging</span>
-              <span class="tag">Scenario Grid</span>
-              <span class="tag">VaR &amp; Tail Risk</span>
+              <span class="tag">Historical VaR / ES</span>
+              <span class="tag">Monte Carlo VaR</span>
+              <span class="tag">Pre-built Stress</span>
             </div>
           </article>
           <article class="feature-card">
-            <h3>RiskOS Analyst Workbench</h3>
-            <p>Analysts explore every security with AI-based factor decomposition, comparable positioning, and risk narratives that clarify the "why" behind exposures.</p>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=900&q=80" alt="Analyst collaborating with AI assistant" loading="lazy">
+            </figure>
+            <h3>Analyst Workbench</h3>
+            <p>Factor Models, Sentiment / News AI Factors, and AI-native regime detection deliver explainable decomposition so analysts articulate risk narratives with Rich UI / Visualizations.</p>
             <div class="tags">
               <span class="tag">AI Decomposition</span>
-              <span class="tag">Risk Narratives</span>
-              <span class="tag">Comparables</span>
+              <span class="tag">Factor Models</span>
+              <span class="tag">Visual Analytics</span>
             </div>
           </article>
           <article class="feature-card">
-            <h3>RiskOS Integration Fabric</h3>
-            <p>Cloud-native and API-first so you can stream positions, exposures, and approvals into existing OMS/EMS stacks without waiting on manual workflows.</p>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1545239351-98fbc079fbee?auto=format&fit=crop&w=900&q=80" alt="Automated trading interface" loading="lazy">
+            </figure>
+            <h3>Automation &amp; Hedging</h3>
+            <p>Dynamic Hedging (HJB optimisation) and Tail Risk Hedging Integration operationalise guardrails with event-driven architecture (Kafka-native) connected to execution desks.</p>
             <div class="tags">
-              <span class="tag">API First</span>
-              <span class="tag">Cloud Native</span>
-              <span class="tag">Real-time Sync</span>
+              <span class="tag">Dynamic Hedging</span>
+              <span class="tag">Tail Risk</span>
+              <span class="tag">Kafka-native</span>
+            </div>
+          </article>
+          <article class="feature-card">
+            <figure>
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Engineers managing hybrid infrastructure" loading="lazy">
+            </figure>
+            <h3>Enterprise Delivery</h3>
+            <p>Multi-Asset Class Support, Integration APIs, and Hybrid Infra (Python R&amp;D + C++ production) provide compliance-ready deployments with DORA compliance baked in.</p>
+            <div class="tags">
+              <span class="tag">Integration APIs</span>
+              <span class="tag">Hybrid Infra</span>
+              <span class="tag">DORA Ready</span>
             </div>
           </article>
         </div>
+        <div class="capability-grid" id="capabilities">
+          <article class="capability-card">
+            <h3>Risk Analytics Core</h3>
+            <ul>
+              <li>Historical VaR / ES</li>
+              <li>Monte Carlo VaR</li>
+              <li>Stress Testing (Historical &amp; Hypothetical)</li>
+              <li>Factor Models</li>
+              <li>Backtesting &amp; Reporting</li>
+            </ul>
+          </article>
+          <article class="capability-card">
+            <h3>Supervision &amp; Compliance</h3>
+            <ul>
+              <li>Regulatory Coverage (Basel, Solvency II, UCITS)</li>
+              <li>Pre-built Regulatory Stress Templates</li>
+              <li>Audit Trail &amp; Compliance Modules</li>
+              <li>DORA compliance</li>
+              <li>Established Client Base / Trust</li>
+            </ul>
+          </article>
+          <article class="capability-card">
+            <h3>AI &amp; Tail Guardrails</h3>
+            <ul>
+              <li>AI-native Regime Detection (volatility/sentiment)</li>
+              <li>Sentiment / News AI Factors</li>
+              <li>Dynamic Hedging (HJB optimisation)</li>
+              <li>Tail Risk Hedging Integration</li>
+              <li>Rich UI / Visualizations</li>
+            </ul>
+          </article>
+          <article class="capability-card">
+            <h3>Architecture &amp; Delivery</h3>
+            <ul>
+              <li>Multi-Asset Class Support</li>
+              <li>Integration APIs</li>
+              <li>Event-driven Architecture (Kafka-native)</li>
+              <li>Hybrid Infra (Python R&amp;D + C++ production)</li>
+              <li>Cloud Deployment Options</li>
+            </ul>
+          </article>
+        </div>
+        <div class="insight-media" aria-label="Illustrations of Phantom RiskOS outcomes">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1520607162513-1c0c6b5b0950?auto=format&fit=crop&w=900&q=80" alt="Cloud-native data infrastructure" loading="lazy">
+            <span>Cloud-native scale with hybrid compute delivery</span>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1520105062273-4d5a34a7a6f1?auto=format&fit=crop&w=900&q=80" alt="Team evaluating market signals" loading="lazy">
+            <span>Forward-looking AI signals for every mandate</span>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1517142089942-ba376ce32a0b?auto=format&fit=crop&w=900&q=80" alt="Investor presentation" loading="lazy">
+            <span>Board-ready reporting with audit trail continuity</span>
+          </figure>
+        </div>
         <div class="stat-strip">
           <div class="stat">
-            <strong>Clarity</strong>
-            <span>Analysts research securities with forward-looking AI decomposition for every exposure.</span>
+            <strong>Explainable</strong>
+            <span>Every exposure carries factor narratives, sentiment overlays, and backtests your LPs can audit.</span>
           </div>
           <div class="stat">
-            <strong>Speed</strong>
-            <span>Risk guardrails appear alongside trade ideas so conviction sizing stays within mandate.</span>
+            <strong>Responsive</strong>
+            <span>Kafka-native, event-driven workflows feed OMS/EMS stacks in under three minutes.</span>
           </div>
           <div class="stat">
-            <strong>Coverage</strong>
-            <span>Cross-asset scenario libraries stress test portfolios before, during, and after execution.</span>
+            <strong>Compliant</strong>
+            <span>Audit Trail &amp; Compliance Modules keep Basel, Solvency II, and UCITS evidence in one place.</span>
           </div>
           <div class="stat">
-            <strong>Full</strong>
-            <span>Audit trails for compliance and investor reporting.</span>
+            <strong>Trusted</strong>
+            <span>Established client base backed by optional cloud deployment options in EU &amp; US regions.</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="visuals-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="visuals-heading">Designed for the way modern desks operate</h2>
+          <p>From analyst explorations to board-ready reporting, Phantom RiskOS blends visual context with automation so teams spend time on insight, not assembly.</p>
+        </div>
+        <div class="visual-row">
+          <figure class="visual-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Analyst reviewing financial dashboards" loading="lazy">
+            <span>Rich UI / Visualizations for cross-asset decomposition</span>
+          </figure>
+          <figure class="visual-card">
+            <img src="https://images.unsplash.com/photo-1520607162513-1c0c6b5b0950?auto=format&fit=crop&w=900&q=80" alt="Server racks representing cloud infrastructure" loading="lazy">
+            <span>Cloud deployment options with hybrid infra pipelines</span>
+          </figure>
+          <figure class="visual-card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Team collaborating in front of data visualizations" loading="lazy">
+            <span>Event-driven workflows aligning risk, trading, and compliance</span>
+          </figure>
         </div>
       </div>
     </section>
@@ -627,10 +887,10 @@
             <p>Purpose-built workflows for portfolio managers, risk teams, and execution desks collaborating in real time.</p>
           </div>
           <ul class="list">
-            <li><span class="check">✓</span><span><strong>Cross-asset visibility</strong> from equity and credit to rates, FX, and commodities.</span></li>
-            <li><span class="check">✓</span><span><strong>Pre-trade guardrails</strong> ensure new positions stay within drawdown, VaR, and concentration limits.</span></li>
-            <li><span class="check">✓</span><span><strong>Automated playbooks</strong> trigger hedging rotations and execution handoffs with approvals baked in.</span></li>
-            <li><span class="check">✓</span><span><strong>Explainable AI</strong> combines interpretable models with governance tooling that stands up to diligence.</span></li>
+            <li><span class="check">✓</span><span><strong>Cross-asset visibility</strong> from equity, credit, rates, FX, and commodities with Multi-Asset Class Support.</span></li>
+            <li><span class="check">✓</span><span><strong>Guardrails as code</strong> enforce drawdown, VaR, and concentration mandates through Integration APIs and event-driven architecture (Kafka-native).</span></li>
+            <li><span class="check">✓</span><span><strong>Automated playbooks</strong> pair Dynamic Hedging (HJB optimisation) with Tail Risk Hedging Integration to keep exposures within appetite.</span></li>
+            <li><span class="check">✓</span><span><strong>Governance-ready intelligence</strong> packages Audit Trail &amp; Compliance Modules plus Rich UI / Visualizations for internal and regulator reporting.</span></li>
           </ul>
         </div>
         <aside class="panel" aria-label="Platform callouts">
@@ -641,15 +901,15 @@
           <div class="list" style="gap: 0.6rem;">
             <div class="metric">
               <strong>API-first</strong>
-              <span>Integrate with OMS, EMS, and internal data lakes.</span>
+              <span>Integration APIs orchestrate OMS, EMS, and data lakes without manual lifts.</span>
             </div>
             <div class="metric">
-              <strong>Human + AI</strong>
-              <span>Surface recommendations, keep humans in command.</span>
+              <strong>Hybrid Infra</strong>
+              <span>Python R&amp;D with C++ production pipelines for scalable delivery.</span>
             </div>
             <div class="metric">
-              <strong>Compliance ready</strong>
-              <span>Versioning, approvals, and evidence in one place.</span>
+              <strong>Regulatory trust</strong>
+              <span>Basel, Solvency II, UCITS, and DORA compliance evidence in one pane.</span>
             </div>
           </div>
         </aside>
@@ -673,12 +933,12 @@
             <p>Whether you run a concentrated equity book, multi-asset macro strategy, or oversee risk for multiple managers, we’d love to collaborate.</p>
           </div>
           <div class="panel" style="gap: 0.8rem;">
-            <p class="small"><strong>Email</strong><br><a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a></p>
+            <p class="small"><strong>Email</strong><br><a href="mailto:sairaghavaganapa@phantomhedge.de">sairaghavaganapa@phantomhedge.de</a></p>
             <p class="small"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/company/phantomhedge">Phantom Hedge</a></p>
           </div>
         </div>
         <div class="panel">
-          <form name="contact" action="https://formsubmit.co/info@phantomhedge.de" method="POST">
+          <form name="contact" action="https://formsubmit.co/sairaghavaganapa@phantomhedge.de" method="POST">
             <input type="hidden" name="_subject" value="Phantom Hedge — Website Inquiry">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
@@ -687,35 +947,14 @@
             <textarea name="message" placeholder="Tell us about your strategy or goals" required></textarea>
             <button class="btn primary" type="submit">Send message</button>
           </form>
-          <p class="small">This form works with Netlify forms or can be connected to your preferred backend.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="impressum" class="section">
-      <div class="container split">
-        <div>
-          <div class="section-header" style="margin-bottom: 1.2rem;">
-            <h2>Impressum</h2>
-            <p>Provider identification according to §5 TMG and content responsibility according to §18 Abs. 2 MStV.</p>
-          </div>
-          <div class="panel" style="gap: 0.6rem;">
-            <p class="small"><strong>Company name:</strong> Phantom Hedge UG (haftungsbeschränkt)</p>
-            <p class="small"><strong>Address:</strong> Kolonnen Str. 8, 10827 Berlin</p>
-            <p class="small"><strong>Commercial register:</strong> Amtsgericht Charlottenburg — HRB 274189B</p>
-            <p class="small"><strong>Managing Director(s):</strong> Ganapa, Sai Raghava Reddy</p>
-            <p class="small"><strong>Contact:</strong> info@phantomhedge.de</p>
-          </div>
-        </div>
-        <div class="panel" style="gap: 0.6rem;">
-          <h3 style="margin: 0;">Regulatory &amp; Tax</h3>
-          <p class="small"><strong>VAT ID (USt‑IdNr.):</strong> DE454442255</p>
+          <p class="small">Submissions are securely forwarded to <a href="mailto:sairaghavaganapa@phantomhedge.de">sairaghavaganapa@phantomhedge.de</a> for rapid follow-up.</p>
+          <p class="small">By submitting this form you acknowledge our <a href="datenschutz.html">Datenschutz &amp; DSGVO notice</a>.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer id="impressum">
     <div class="container cols">
       <div>
         <div class="brand"><img src="assets/logo/phantom-hedge-logo.png" alt="Phantom Hedge logo" /><span>Phantom Hedge</span></div>
@@ -730,8 +969,9 @@
       </div>
       <div>
         <h4>Legal</h4>
-        <a href="#impressum">Impressum</a><br>
-        <a href="#">Datenschutz</a>
+        <a href="impressum.html">Impressum</a><br>
+        <a href="datenschutz.html">Datenschutz &amp; DSGVO</a><br>
+        <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a>
       </div>
     </div>
   </footer>
