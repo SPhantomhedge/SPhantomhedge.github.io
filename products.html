@@ -7,117 +7,236 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --blue-dark: #002B80;
-      --blue-light: #007BFF;
-      --gray-bg: #f8f9fc;
-      --text-color: #1a1a1a;
+      --bg: #07132a;
+      --bg-soft: rgba(24, 44, 88, 0.55);
+      --panel: rgba(13, 27, 52, 0.7);
+      --panel-strong: rgba(18, 40, 74, 0.88);
+      --text: #f4f6fb;
+      --text-soft: #c6cedd;
+      --accent: #48e1b8;
+      --accent-soft: #4ac5ff;
+      --line: rgba(255, 255, 255, 0.12);
+      --shadow: 0 18px 45px rgba(4, 16, 36, 0.45);
+      --bg-start: #071633;
+      --bg-mid: #0a2147;
+      --bg-end: #0c2c59;
+      --page-gradient:
+        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
+        linear-gradient(190deg, var(--bg-start) 0%, var(--bg-mid) 48%, var(--bg-end) 100%);
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
+    html, body { height: 100%; }
+
     body {
       font-family: 'Inter', sans-serif;
-      background-color: var(--gray-bg);
-      color: var(--text-color);
+      color: var(--text);
       line-height: 1.6;
+      background: var(--page-gradient);
+      background-repeat: no-repeat;
+      background-position: -10% -40%, 110% 10%, center top;
+      background-color: #071633;
+      min-height: 100%;
     }
+
     header {
-      background-color: white;
-      padding: 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #e0e0e0;
+      padding: 1.1rem 2rem;
+      backdrop-filter: blur(14px);
+      background: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
+
     .header-logo {
       display: flex;
       align-items: center;
     }
+
     .header-logo a img {
-      height: 160px;
+      height: 120px;
     }
+
     .header-center-logo {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
     }
+
     .header-center-logo img {
-      height: 320px;
+      height: 240px;
     }
+
     nav a {
-      margin-left: 2rem;
+      margin-left: 1.6rem;
       text-decoration: none;
-      color: var(--blue-dark);
-      font-weight: 500;
+      color: rgba(220, 234, 255, 0.78);
+      font-weight: 600;
+      transition: color 0.2s ease, background 0.2s ease;
+      padding: 0.55rem 0.8rem;
+      border-radius: 12px;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.08);
     }
+
     .hero {
-      padding: 4rem 2rem 2rem;
+      padding: clamp(72px, 12vw, 140px) 2rem 4rem;
       text-align: center;
-      background-color: white;
+      color: var(--text);
+      background: rgba(7, 19, 42, 0.55);
+      border-radius: 32px;
+      width: min(1100px, 92vw);
+      margin: clamp(84px, 12vw, 140px) auto 4rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
     }
-    .hero .center-logo img {
-      max-width: 320px;
-      margin-bottom: 2rem;
-    }
+
     .hero h1 {
-      font-size: 3rem;
-      color: var(--blue-dark);
+      font-size: clamp(2.5rem, 5vw, 3.2rem);
       margin-bottom: 1rem;
+      letter-spacing: -0.4px;
     }
+
     .hero p {
-      font-size: 1.25rem;
-      color: #333;
-      max-width: 700px;
+      font-size: 1.2rem;
+      max-width: 720px;
       margin: 0 auto;
+      color: rgba(229, 237, 250, 0.82);
     }
+
     .section {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 4rem auto;
       padding: 0 2rem;
+      display: grid;
+      gap: 2.5rem;
     }
+
     .section h2 {
       font-size: 2rem;
-      color: var(--blue-dark);
-      margin-bottom: 1.5rem;
+      color: var(--text);
       text-align: center;
+      margin-bottom: 0.4rem;
     }
+
+    .section > p {
+      color: var(--text-soft);
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
+
     .product-box {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease;
+      background: linear-gradient(150deg, rgba(74, 197, 255, 0.18), rgba(72, 225, 184, 0.12));
+      padding: 2.2rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 1rem;
     }
-    .product-box:hover {
-      transform: translateY(-5px);
+
+    .product-box figure {
+      margin: -1.6rem -1.6rem 0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.24);
     }
+
+    .product-box figure img {
+      display: block;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
     .product-box h3 {
-      color: var(--blue-light);
-      margin-bottom: 0.5rem;
+      color: var(--accent);
+      font-size: 1.2rem;
     }
-    .product-box p {
-      color: #333;
+
+    .product-box p,
+    .product-box ul {
+      color: var(--text);
     }
+
+    .product-box ul {
+      padding-left: 1.1rem;
+      display: grid;
+      gap: 0.4rem;
+    }
+
+    .product-box li {
+      font-size: 0.95rem;
+    }
+
     footer {
-      background-color: var(--blue-dark);
-      color: white;
+      background: rgba(7, 19, 42, 0.6);
+      color: var(--text-soft);
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
+
     footer a {
-      color: white;
-      text-decoration: underline;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .header-center-logo {
+        position: static;
+        transform: none;
+      }
+
+      .header-center-logo img {
+        height: 160px;
+      }
+
+      nav {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      nav a {
+        margin-left: 0;
+      }
+
+      .hero {
+        padding: 96px 1.5rem 3rem;
+        margin: 96px 1.5rem 3rem;
+      }
+
+      .product-box figure {
+        margin: -1.2rem -1.2rem 0;
+      }
     }
   </style>
 </head>
@@ -137,34 +256,85 @@
   </header>
 
   <section class="hero">
-    <h1>Built for Us. Now Shared with You.</h1>
-    <p>Phantom Hedge develops AI-native risk and execution infrastructure, originally designed to support our internal capital management. Now we’re opening that capability to forward-thinking fund managers.</p>
+    <h1>Phantom RiskOS: Cloud-native risk intelligence for modern managers</h1>
+    <p>Designed as an API-first, multi-asset RiskOS, Phantom Hedge empowers analysts with Historical VaR / ES, Monte Carlo VaR, AI-native regime detection, and dynamic hedging guardrails delivered through a rich visual workbench.</p>
   </section>
 
   <section class="section">
-    <h2>Our Product Suite</h2>
+    <h2>Phantom RiskOS</h2>
     <div class="product-grid">
       <div class="product-box">
-        <h3>Phantom RiskOS</h3>
-        <p>Forward-looking diagnostics for regime shifts, risk clusters, and exposure mapping — designed to give managers a structural edge before stress emerges.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1581093808071-9b6c00a2f00b?auto=format&fit=crop&w=900&q=80" alt="Risk analytics dashboard" loading="lazy">
+        </figure>
+        <h3>Scenario Intelligence</h3>
+        <p>Stress test every idea before capital is at risk with ready-to-run analytics.</p>
+        <ul>
+          <li>Historical VaR / ES &amp; Monte Carlo VaR side-by-side</li>
+          <li>Stress Testing (Historical &amp; Hypothetical) mapped to Pre-built Regulatory Stress Templates</li>
+          <li>Backtesting &amp; Reporting with audit-ready exports</li>
+        </ul>
       </div>
       <div class="product-box">
-        <h3>Phantom Trade Intelligence</h3>
-        <p>Execution support system with dynamic risk bands, volatility-driven sizing, and market-aware trade scoring. Built for precision under uncertainty.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=900&q=80" alt="Analyst reviewing AI insights" loading="lazy">
+        </figure>
+        <h3>Analyst Workbench</h3>
+        <p>Explainable intelligence that grounds every recommendation in data.</p>
+        <ul>
+          <li>Factor Models plus Sentiment / News AI Factors in one view</li>
+          <li>AI-native Regime Detection (volatility/sentiment) guiding conviction</li>
+          <li>Rich UI / Visualizations for analyst narratives and stakeholder decks</li>
+        </ul>
       </div>
       <div class="product-box">
-        <h3>Agentic AI</h3>
-        <p>Our Agentic AI agents analyze the previous day's market events and sentiment to automatically generate daily investment theme briefs and curated security baskets. This system empowers portfolio managers and analysts to digest complex market narratives at speed and surface high-quality, actionable opportunities.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1520607162513-1c0c6b5b0950?auto=format&fit=crop&w=900&q=80" alt="Cloud infrastructure" loading="lazy">
+        </figure>
+        <h3>Integration &amp; Governance</h3>
+        <p>Enterprise-grade delivery that scales across desks and regulators.</p>
+        <ul>
+          <li>Multi-Asset Class Support with Integration APIs and event-driven architecture (Kafka-native)</li>
+          <li>Dynamic Hedging (HJB optimisation) &amp; Tail Risk Hedging Integration wired to execution</li>
+          <li>Audit Trail &amp; Compliance Modules covering Basel, Solvency II, UCITS, and DORA compliance</li>
+          <li>Hybrid Infra (Python R&amp;D + C++ production) with Cloud Deployment Options</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why allocators trust Phantom Hedge</h2>
+    <div class="product-grid">
+      <div class="product-box">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" alt="Streaming data visualization" loading="lazy">
+        </figure>
+        <h3>Event-driven oversight</h3>
+        <p>Event-driven Architecture (Kafka-native) alerts teams the moment exposures breach guardrails, powering faster approvals and hedging.</p>
       </div>
       <div class="product-box">
-        <h3>Phantom AI Marketplace <span style="font-size: 0.9em; color: #666;">(Coming 2026)</span></h3>
-        <p>Plug-and-play model marketplace for institutional AI — enabling developers to share models with asset managers under secure, auditable, and validated conditions.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Compliance review" loading="lazy">
+        </figure>
+        <h3>Regulatory depth</h3>
+        <p>Audit Trail &amp; Compliance Modules maintain versioning, e-signatures, and regulator evidence across Basel, Solvency II, UCITS, and DORA mandates.</p>
+      </div>
+      <div class="product-box">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Institutional partnership" loading="lazy">
+        </figure>
+        <h3>Established partnership</h3>
+        <p>Established Client Base / Trust underpins every deployment, supported by cloud regions aligned to your data residency requirements.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Phantom Hedge UG | <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a>
+    &copy; 2025 Phantom Hedge UG |
+    <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a> |
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz &amp; DSGVO</a>
   </footer>
 </body>
 </html>
