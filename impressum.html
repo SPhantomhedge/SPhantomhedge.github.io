@@ -8,20 +8,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-start: #071633;
-      --bg-mid: #0a2147;
-      --bg-end: #0c2c59;
-      --panel: rgba(13, 27, 52, 0.78);
+      --bg: #0c1f5b;
+      --bg-soft: rgba(46, 86, 176, 0.55);
+      --panel: rgba(12, 35, 91, 0.72);
+      --panel-strong: rgba(20, 54, 132, 0.88);
+      --text: #f4f6fb;
       --text-light: #f4f6fb;
       --text-body: rgba(244, 246, 251, 0.9);
       --text-soft: rgba(223, 232, 247, 0.9);
       --text-muted: #c6cedd;
       --accent: #48e1b8;
+      --accent-soft: #6bc1ff;
+      --line: rgba(255, 255, 255, 0.12);
+      --shadow: 0 18px 45px rgba(6, 18, 48, 0.45);
+      --bg-start: #0b1f63;
+      --bg-mid: #123b9d;
+      --bg-end: #1f4fcf;
       --page-gradient:
-        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
-        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
+        radial-gradient(1600px 900px at -10% -40%, rgba(104, 148, 255, 0.28), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(80, 140, 255, 0.2), transparent 65%),
         linear-gradient(190deg, var(--bg-start) 0%, var(--bg-mid) 48%, var(--bg-end) 100%);
     }
+
+
 
     * { box-sizing: border-box; }
 
@@ -35,7 +44,7 @@
       background: var(--page-gradient);
       background-repeat: no-repeat;
       background-position: -10% -40%, 110% 10%, center top;
-      background-color: #071633;
+      background-color: #0b1f63;
       padding: 0 1.5rem 4rem;
       min-height: 100%;
     }
