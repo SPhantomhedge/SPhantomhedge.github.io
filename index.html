@@ -678,7 +678,10 @@
           </div>
         </div>
         <div class="panel">
-          <form name="contact" netlify>
+          <form name="contact" action="https://formsubmit.co/info@phantomhedge.de" method="POST">
+            <input type="hidden" name="_subject" value="Phantom Hedge — Website Inquiry">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Work email" required>
             <textarea name="message" placeholder="Tell us about your strategy or goals" required></textarea>
