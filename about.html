@@ -17,19 +17,24 @@
       --accent-soft: #4ac5ff;
       --line: rgba(255, 255, 255, 0.12);
       --shadow: 0 18px 45px rgba(4, 16, 36, 0.45);
+      --page-gradient:
+        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
+        linear-gradient(190deg, #071633 0%, #0a2147 48%, #0c2c59 100%);
     }
+
+    html, body { height: 100%; }
 
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       line-height: 1.6;
       color: var(--text);
-      background:
-        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
-        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
-        linear-gradient(190deg, #071633 0%, #0a2147 48%, #0c2c59 100%);
+      background: var(--page-gradient);
       background-repeat: no-repeat;
       background-position: -10% -40%, 110% 10%, center top;
+      background-color: #071633;
+      min-height: 100%;
     }
 
     header {

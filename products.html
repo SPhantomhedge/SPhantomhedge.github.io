@@ -17,6 +17,10 @@
       --accent-soft: #4ac5ff;
       --line: rgba(255, 255, 255, 0.12);
       --shadow: 0 18px 45px rgba(4, 16, 36, 0.45);
+      --page-gradient:
+        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
+        linear-gradient(190deg, #071633 0%, #0a2147 48%, #0c2c59 100%);
     }
 
     * {
@@ -25,16 +29,17 @@
       box-sizing: border-box;
     }
 
+    html, body { height: 100%; }
+
     body {
       font-family: 'Inter', sans-serif;
       color: var(--text);
       line-height: 1.6;
-      background:
-        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
-        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
-        linear-gradient(190deg, #071633 0%, #0a2147 48%, #0c2c59 100%);
+      background: var(--page-gradient);
       background-repeat: no-repeat;
       background-position: -10% -40%, 110% 10%, center top;
+      background-color: #071633;
+      min-height: 100%;
     }
 
     header {
@@ -87,10 +92,14 @@
     .hero {
       padding: clamp(72px, 12vw, 140px) 2rem 4rem;
       text-align: center;
-      background:
-        linear-gradient(160deg, rgba(14, 46, 92, 0.92), rgba(10, 33, 71, 0.88)),
-        url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80') center/cover;
       color: var(--text);
+      background: rgba(7, 19, 42, 0.55);
+      border-radius: 32px;
+      width: min(1100px, 92vw);
+      margin: clamp(84px, 12vw, 140px) auto 4rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
     }
 
     .hero h1 {
@@ -219,6 +228,7 @@
 
       .hero {
         padding: 96px 1.5rem 3rem;
+        margin: 96px 1.5rem 3rem;
       }
 
       .product-box figure {
@@ -262,12 +272,6 @@
           <li>Backtesting &amp; Reporting with audit-ready exports</li>
         </ul>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Why allocators trust Phantom Hedge</h2>
-    <div class="product-grid">
       <div class="product-box">
         <figure>
           <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=900&q=80" alt="Analyst reviewing AI insights" loading="lazy">

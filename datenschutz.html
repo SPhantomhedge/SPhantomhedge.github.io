@@ -14,24 +14,30 @@
       --text-light: #f4f6fb;
       --text-muted: #c6cedd;
       --text-body: #0b1a33;
-      --text-soft: #41506a;
+      --text-soft: rgba(223, 232, 247, 0.92);
+      --text-panel: rgba(244, 246, 251, 0.9);
       --accent: #48e1b8;
+      --page-gradient:
+        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
+        linear-gradient(190deg, var(--bg-start) 0%, var(--bg-mid) 48%, var(--bg-end) 100%);
     }
 
     * { box-sizing: border-box; }
+
+    html, body { height: 100%; }
 
     body {
       margin: 0;
       font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       line-height: 1.6;
       color: var(--text-light);
-      background:
-        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
-        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
-        linear-gradient(190deg, var(--bg-start) 0%, var(--bg-mid) 48%, var(--bg-end) 100%);
+      background: var(--page-gradient);
       background-repeat: no-repeat;
       background-position: -10% -40%, 110% 10%, center top;
+      background-color: #071633;
       padding: 0 1.5rem 4rem;
+      min-height: 100%;
     }
 
     a {
@@ -50,22 +56,25 @@
     main {
       max-width: 960px;
       margin: 0 auto;
-      background: #ffffff;
-      border-radius: 24px;
-      padding: clamp(2rem, 5vw, 3rem);
-      box-shadow: 0 24px 60px rgba(11, 26, 51, 0.18);
-      border: 1px solid rgba(17, 40, 78, 0.14);
-      color: var(--text-body);
+      background: rgba(13, 27, 52, 0.78);
+      border-radius: 28px;
+      padding: clamp(2.2rem, 5vw, 3.2rem);
+      box-shadow: 0 24px 60px rgba(4, 16, 36, 0.32);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-panel);
+      backdrop-filter: blur(16px);
     }
 
     h1 {
       margin-top: 0;
       font-size: clamp(2rem, 4vw, 2.6rem);
+      color: #ffffff;
     }
 
     h2 {
       margin-top: 2.4rem;
       font-size: clamp(1.4rem, 3vw, 1.75rem);
+      color: #ffffff;
     }
 
     p, li {
@@ -86,17 +95,18 @@
     }
 
     .card {
-      background: #f4f7fb;
-      border-radius: 18px;
+      background: rgba(7, 19, 42, 0.65);
+      border-radius: 20px;
       padding: 1.4rem 1.6rem;
-      border: 1px solid rgba(17, 40, 78, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       margin-bottom: 1.6rem;
+      color: var(--text-soft);
     }
 
     .card strong {
       display: block;
       margin-bottom: 0.35rem;
-      color: var(--text-body);
+      color: #ffffff;
     }
 
     footer {
