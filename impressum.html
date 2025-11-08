@@ -8,11 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #eef3fb;
+      --bg-start: #071633;
+      --bg-mid: #0a2147;
+      --bg-end: #0c2c59;
       --panel: #ffffff;
-      --text: #0b1a33;
+      --text-light: #f4f6fb;
+      --text-body: #0b1a33;
       --text-soft: #3d4a63;
-      --accent: #1976d2;
+      --text-muted: #c6cedd;
+      --accent: #48e1b8;
     }
 
     * { box-sizing: border-box; }
@@ -20,9 +24,14 @@
     body {
       margin: 0;
       font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      color: var(--text);
+      color: var(--text-light);
       line-height: 1.65;
-      background: linear-gradient(180deg, var(--bg) 0%, #f9fbff 100%);
+      background:
+        radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
+        linear-gradient(190deg, var(--bg-start) 0%, var(--bg-mid) 48%, var(--bg-end) 100%);
+      background-repeat: no-repeat;
+      background-position: -10% -40%, 110% 10%, center top;
       padding: 0 1.5rem 4rem;
     }
 
@@ -30,6 +39,7 @@
       max-width: 960px;
       margin: 0 auto;
       padding: 3rem 0 1.2rem;
+      color: var(--text-light);
     }
 
     header a {
@@ -44,8 +54,9 @@
       background: var(--panel);
       border-radius: 24px;
       padding: clamp(2rem, 5vw, 3rem);
-      box-shadow: 0 24px 60px rgba(11, 26, 51, 0.08);
-      border: 1px solid rgba(11, 26, 51, 0.08);
+      box-shadow: 0 24px 60px rgba(11, 26, 51, 0.18);
+      border: 1px solid rgba(11, 26, 51, 0.14);
+      color: var(--text-body);
     }
 
     h1 {
@@ -73,7 +84,7 @@
 
     dt {
       font-weight: 600;
-      color: var(--text);
+      color: var(--text-body);
     }
 
     dd {
@@ -95,7 +106,7 @@
       margin: 2.4rem auto 0;
       text-align: center;
       font-size: 0.9rem;
-      color: rgba(11, 26, 51, 0.6);
+      color: var(--text-muted);
     }
 
     footer a {
