@@ -24,12 +24,12 @@
       line-height: 1.6;
     }
     header {
-      background-color: white;
+      background: linear-gradient(120deg, #8bb7ff, #568de8);
       padding: 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
     .header-logo {
       display: flex;
@@ -49,31 +49,28 @@
     nav a {
       margin-left: 2rem;
       text-decoration: none;
-      color: var(--blue-dark);
+      color: white;
       font-weight: 500;
     }
     nav a:hover {
       text-decoration: underline;
     }
     .hero {
-      padding: 4rem 2rem 2rem;
+      padding: 5rem 2rem 4rem;
       text-align: center;
-      background-color: white;
-    }
-    .hero .center-logo img {
-      max-width: 320px;
-      margin-bottom: 2rem;
+      background: linear-gradient(160deg, rgba(15, 61, 128, 0.9), rgba(10, 43, 92, 0.85)), url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1400&q=80') center/cover;
+      color: white;
+      position: relative;
     }
     .hero h1 {
       font-size: 3rem;
-      color: var(--blue-dark);
       margin-bottom: 1rem;
     }
     .hero p {
       font-size: 1.25rem;
-      color: #333;
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto;
+      color: rgba(255, 255, 255, 0.82);
     }
     .section {
       max-width: 1000px;
@@ -88,18 +85,36 @@
     }
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
     .product-box {
       background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease;
+      padding: 2.2rem;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 61, 128, 0.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid rgba(15, 61, 128, 0.1);
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .product-box figure {
+      margin: -1.2rem -1.2rem 0;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 18px 35px rgba(15, 61, 128, 0.18);
+    }
+
+    .product-box figure img {
+      display: block;
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
     }
     .product-box:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 24px 50px rgba(15, 61, 128, 0.16);
     }
     .product-box h3 {
       color: var(--blue-light);
@@ -107,6 +122,16 @@
     }
     .product-box p {
       color: #333;
+    }
+    .product-box ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: #333;
+      display: grid;
+      gap: 0.4rem;
+    }
+    .product-box li {
+      font-size: 0.95rem;
     }
     footer {
       background-color: var(--blue-dark);
@@ -137,34 +162,85 @@
   </header>
 
   <section class="hero">
-    <h1>Built for Us. Now Shared with You.</h1>
-    <p>Phantom Hedge develops AI-native risk and execution infrastructure, originally designed to support our internal capital management. Now we’re opening that capability to forward-thinking fund managers.</p>
+    <h1>Phantom RiskOS: Cloud-native risk intelligence for modern managers</h1>
+    <p>Designed as an API-first, multi-asset RiskOS, Phantom Hedge empowers analysts with Historical VaR / ES, Monte Carlo VaR, AI-native regime detection, and dynamic hedging guardrails delivered through a rich visual workbench.</p>
   </section>
 
   <section class="section">
-    <h2>Our Product Suite</h2>
+    <h2>Phantom RiskOS</h2>
     <div class="product-grid">
       <div class="product-box">
-        <h3>Phantom RiskOS</h3>
-        <p>Forward-looking diagnostics for regime shifts, risk clusters, and exposure mapping — designed to give managers a structural edge before stress emerges.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1581093808071-9b6c00a2f00b?auto=format&fit=crop&w=900&q=80" alt="Risk analytics dashboard" loading="lazy">
+        </figure>
+        <h3>Scenario Intelligence</h3>
+        <p>Stress test every idea before capital is at risk with ready-to-run analytics.</p>
+        <ul>
+          <li>Historical VaR / ES &amp; Monte Carlo VaR side-by-side</li>
+          <li>Stress Testing (Historical &amp; Hypothetical) mapped to Pre-built Regulatory Stress Templates</li>
+          <li>Backtesting &amp; Reporting with audit-ready exports</li>
+        </ul>
       </div>
       <div class="product-box">
-        <h3>Phantom Trade Intelligence</h3>
-        <p>Execution support system with dynamic risk bands, volatility-driven sizing, and market-aware trade scoring. Built for precision under uncertainty.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=900&q=80" alt="Analyst reviewing AI insights" loading="lazy">
+        </figure>
+        <h3>Analyst Workbench</h3>
+        <p>Explainable intelligence that grounds every recommendation in data.</p>
+        <ul>
+          <li>Factor Models plus Sentiment / News AI Factors in one view</li>
+          <li>AI-native Regime Detection (volatility/sentiment) guiding conviction</li>
+          <li>Rich UI / Visualizations for analyst narratives and stakeholder decks</li>
+        </ul>
       </div>
       <div class="product-box">
-        <h3>Agentic AI</h3>
-        <p>Our Agentic AI agents analyze the previous day's market events and sentiment to automatically generate daily investment theme briefs and curated security baskets. This system empowers portfolio managers and analysts to digest complex market narratives at speed and surface high-quality, actionable opportunities.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1520607162513-1c0c6b5b0950?auto=format&fit=crop&w=900&q=80" alt="Cloud infrastructure" loading="lazy">
+        </figure>
+        <h3>Integration &amp; Governance</h3>
+        <p>Enterprise-grade delivery that scales across desks and regulators.</p>
+        <ul>
+          <li>Multi-Asset Class Support with Integration APIs and event-driven architecture (Kafka-native)</li>
+          <li>Dynamic Hedging (HJB optimisation) &amp; Tail Risk Hedging Integration wired to execution</li>
+          <li>Audit Trail &amp; Compliance Modules covering Basel, Solvency II, UCITS, and DORA compliance</li>
+          <li>Hybrid Infra (Python R&amp;D + C++ production) with Cloud Deployment Options</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why allocators trust Phantom Hedge</h2>
+    <div class="product-grid">
+      <div class="product-box">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" alt="Streaming data visualization" loading="lazy">
+        </figure>
+        <h3>Event-driven oversight</h3>
+        <p>Event-driven Architecture (Kafka-native) alerts teams the moment exposures breach guardrails, powering faster approvals and hedging.</p>
       </div>
       <div class="product-box">
-        <h3>Phantom AI Marketplace <span style="font-size: 0.9em; color: #666;">(Coming 2026)</span></h3>
-        <p>Plug-and-play model marketplace for institutional AI — enabling developers to share models with asset managers under secure, auditable, and validated conditions.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Compliance review" loading="lazy">
+        </figure>
+        <h3>Regulatory depth</h3>
+        <p>Audit Trail &amp; Compliance Modules maintain versioning, e-signatures, and regulator evidence across Basel, Solvency II, UCITS, and DORA mandates.</p>
+      </div>
+      <div class="product-box">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Institutional partnership" loading="lazy">
+        </figure>
+        <h3>Established partnership</h3>
+        <p>Established Client Base / Trust underpins every deployment, supported by cloud regions aligned to your data residency requirements.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Phantom Hedge UG | <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a>
+    &copy; 2025 Phantom Hedge UG |
+    <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a> |
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz &amp; DSGVO</a>
   </footer>
 </body>
 </html>
