@@ -33,6 +33,8 @@
         radial-gradient(1600px 900px at -10% -40%, rgba(98, 176, 255, 0.22), transparent 60%),
         radial-gradient(1400px 820px at 110% 10%, rgba(72, 225, 184, 0.22), transparent 65%),
         linear-gradient(190deg, #071633 0%, #0a2147 48%, #0c2c59 100%);
+      background-repeat: no-repeat;
+      background-position: -10% -40%, 110% 10%, center top;
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
@@ -49,7 +51,7 @@
       top: 0;
       z-index: 100;
       backdrop-filter: blur(14px);
-      background: linear-gradient(120deg, rgba(142, 190, 255, 0.95), rgba(88, 142, 235, 0.88));
+      background: transparent;
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
@@ -179,21 +181,6 @@
     .hero-stack {
       display: grid;
       gap: 1.4rem;
-    }
-
-    .hero-visual {
-      border-radius: 28px;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: var(--shadow);
-      background: rgba(5, 18, 39, 0.6);
-    }
-
-    .hero-visual img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
 
     .hero-card {
@@ -694,9 +681,6 @@
           <p class="note">Trusted by allocators who demand explainable risk intelligence, regulatory readiness, and tail-risk guardrails.</p>
         </div>
         <div class="hero-stack">
-          <figure class="hero-visual" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80" alt="Abstract data visualization representing financial risk insights" loading="lazy">
-          </figure>
           <div class="hero-card" aria-label="Snapshot of platform outcomes">
             <h3>Forward-looking control, live in production</h3>
             <p>Historical VaR / ES, Monte Carlo VaR, and AI-native regime detection converge to keep drawdowns within mandate while enabling dynamic hedging automation.</p>
@@ -756,7 +740,7 @@
           </article>
           <article class="feature-card">
             <figure>
-              <img src="https://images.unsplash.com/photo-1545239351-98fbc079fbee?auto=format&fit=crop&w=900&q=80" alt="Automated trading interface" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=900&q=80" alt="Automated trading interface" loading="lazy">
             </figure>
             <h3>Automation &amp; Hedging</h3>
             <p>Dynamic Hedging (HJB optimisation) and Tail Risk Hedging Integration operationalise guardrails with event-driven architecture (Kafka-native) connected to execution desks.</p>
@@ -823,15 +807,15 @@
         </div>
         <div class="insight-media" aria-label="Illustrations of Phantom RiskOS outcomes">
           <figure>
-            <img src="https://images.unsplash.com/photo-1520607162513-1c0c6b5b0950?auto=format&fit=crop&w=900&q=80" alt="Cloud-native data infrastructure" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1581091215367-59d242c25b91?auto=format&fit=crop&w=900&q=80" alt="Cloud-native data infrastructure" loading="lazy">
             <span>Cloud-native scale with hybrid compute delivery</span>
           </figure>
           <figure>
-            <img src="https://images.unsplash.com/photo-1520105062273-4d5a34a7a6f1?auto=format&fit=crop&w=900&q=80" alt="Team evaluating market signals" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80" alt="Team evaluating market signals" loading="lazy">
             <span>Forward-looking AI signals for every mandate</span>
           </figure>
           <figure>
-            <img src="https://images.unsplash.com/photo-1517142089942-ba376ce32a0b?auto=format&fit=crop&w=900&q=80" alt="Investor presentation" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="Investor presentation" loading="lazy">
             <span>Board-ready reporting with audit trail continuity</span>
           </figure>
         </div>
@@ -868,7 +852,7 @@
             <span>Rich UI / Visualizations for cross-asset decomposition</span>
           </figure>
           <figure class="visual-card">
-            <img src="https://images.unsplash.com/photo-1520607162513-1c0c6b5b0950?auto=format&fit=crop&w=900&q=80" alt="Server racks representing cloud infrastructure" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Server racks representing cloud infrastructure" loading="lazy">
             <span>Cloud deployment options with hybrid infra pipelines</span>
           </figure>
           <figure class="visual-card">
