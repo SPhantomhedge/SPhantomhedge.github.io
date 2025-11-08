@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datenschutz &amp; DSGVO – Phantom Hedge</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #091651;
+      --bg-soft: rgba(40, 88, 200, 0.52);
+      --panel: rgba(7, 28, 88, 0.76);
+      --panel-strong: rgba(12, 42, 132, 0.9);
+      --text: #f4f6fb;
+      --text-light: #f4f6fb;
+      --text-soft: rgba(223, 232, 247, 0.92);
+      --text-muted: #c6cedd;
+      --text-body: #0b1a33;
+      --text-panel: rgba(244, 246, 251, 0.9);
+      --accent: #48e1b8;
+      --accent-soft: #6bc1ff;
+      --line: rgba(255, 255, 255, 0.12);
+      --shadow: 0 18px 45px rgba(6, 18, 48, 0.45);
+      --bg-start: #020b3a;
+      --bg-mid: #0d2280;
+      --bg-end: #1c3fb8;
+      --page-gradient:
+        radial-gradient(1600px 900px at -10% -40%, rgba(64, 120, 240, 0.32), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(54, 104, 220, 0.22), transparent 65%),
+        linear-gradient(185deg, var(--bg-start) 0%, var(--bg-mid) 52%, var(--bg-end) 100%);
+    }
+
+
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: var(--text-light);
+      background: var(--page-gradient);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: -10% -40%, 110% 10%, center top;
+      background-color: var(--bg-start);
+      padding: 0 1.5rem 4rem;
+      min-height: 100%;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    header {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 0 1rem;
+      color: var(--text-light);
+    }
+
+    header a { text-decoration: none; font-weight: 600; color: var(--accent); }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: rgba(13, 27, 52, 0.78);
+      border-radius: 28px;
+      padding: clamp(2.2rem, 5vw, 3.2rem);
+      box-shadow: 0 24px 60px rgba(4, 16, 36, 0.32);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-panel);
+      backdrop-filter: blur(16px);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      color: #ffffff;
+    }
+
+    h2 {
+      margin-top: 2.4rem;
+      font-size: clamp(1.4rem, 3vw, 1.75rem);
+      color: #ffffff;
+    }
+
+    p, li {
+      color: var(--text-soft);
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .meta {
+      display: grid;
+      gap: 0.3rem;
+      margin: 1.6rem 0 2.2rem;
+      color: var(--text-soft);
+      font-size: 0.95rem;
+    }
+
+    .card {
+      background: rgba(7, 19, 42, 0.65);
+      border-radius: 20px;
+      padding: 1.4rem 1.6rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 1.6rem;
+      color: var(--text-soft);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: #ffffff;
+    }
+
+    footer {
+      max-width: 960px;
+      margin: 2.8rem auto 0;
+      text-align: center;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">&larr; Zurück zur Startseite</a>
+  </header>
+  <main>
+    <h1>Datenschutz &amp; DSGVO</h1>
+    <div class="meta">
+      <span><strong>Verantwortlicher:</strong> Phantom Hedge UG (haftungsbeschränkt)</span>
+      <span>Kolonnen Str. 8, 10827 Berlin</span>
+      <span>E-Mail: <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a></span>
+    </div>
+
+    <h2>1. Welche Daten werden verarbeitet?</h2>
+    <p>Wir verarbeiten personenbezogene Daten, die Sie uns über das Kontaktformular zur Verfügung stellen. Dazu gehören:</p>
+    <ul>
+      <li>Name</li>
+      <li>Geschäftliche E-Mail-Adresse</li>
+      <li>Alle freiwillig bereitgestellten Informationen in Ihrer Nachricht</li>
+    </ul>
+
+    <h2>2. Zweck der Verarbeitung &amp; Rechtsgrundlagen</h2>
+    <p>Die Verarbeitung Ihrer Daten erfolgt zur Beantwortung Ihrer Anfrage, zur Anbahnung von Geschäftsbeziehungen sowie zur Dokumentation regulatorischer Verpflichtungen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) und ggf. Art. 6 Abs. 1 lit. c DSGVO (rechtliche Verpflichtungen).</p>
+
+    <h2>3. Empfänger &amp; Weitergabe</h2>
+    <p>Ihre Nachricht wird automatisiert an <strong>sairaghavaganapa@phantomhedge.de</strong> weitergeleitet und intern an die zuständigen Mitarbeitenden verteilt. Eine Weitergabe an Dritte erfolgt nur, wenn dies zur Vertragserfüllung oder aufgrund gesetzlicher Verpflichtungen notwendig ist.</p>
+
+    <h2>4. Speicherdauer</h2>
+    <p>Kontaktanfragen werden grundsätzlich nach 24 Monaten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen oder ein Vertragsverhältnis begründet wurde.</p>
+
+    <h2>5. Ihre Rechte</h2>
+    <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Datenübertragbarkeit. Außerdem steht Ihnen ein Widerspruchsrecht gegen die Verarbeitung zu. Wenden Sie sich hierzu an <a href="mailto:sairaghavaganapa@phantomhedge.de">sairaghavaganapa@phantomhedge.de</a>. Zudem besteht ein Beschwerderecht bei der zuständigen Aufsichtsbehörde.</p>
+
+    <h2>6. Sicherheitsmaßnahmen</h2>
+    <p>Wir setzen technische und organisatorische Maßnahmen ein, um Ihre Daten vor Verlust, Missbrauch oder unberechtigtem Zugriff zu schützen. Dazu gehören verschlüsselte Übermittlungen sowie rollenbasierte Zugriffskontrollen.</p>
+
+    <h2>7. Aktualisierungen</h2>
+    <p>Diese Datenschutzinformationen werden bei Bedarf aktualisiert, um rechtliche oder organisatorische Anpassungen zu berücksichtigen. Das Datum der letzten Aktualisierung lautet 07. Februar 2025.</p>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Phantom Hedge UG (haftungsbeschränkt). <a href="impressum.html">Impressum</a></p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
