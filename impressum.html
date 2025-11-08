@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impressum – Phantom Hedge</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c1f5b;
+      --bg-soft: rgba(46, 86, 176, 0.55);
+      --panel: rgba(12, 35, 91, 0.72);
+      --panel-strong: rgba(20, 54, 132, 0.88);
+      --text: #f4f6fb;
+      --text-light: #f4f6fb;
+      --text-body: rgba(244, 246, 251, 0.9);
+      --text-soft: rgba(223, 232, 247, 0.9);
+      --text-muted: #c6cedd;
+      --accent: #48e1b8;
+      --accent-soft: #6bc1ff;
+      --line: rgba(255, 255, 255, 0.12);
+      --shadow: 0 18px 45px rgba(6, 18, 48, 0.45);
+      --bg-start: #0b1f63;
+      --bg-mid: #123b9d;
+      --bg-end: #1f4fcf;
+      --page-gradient:
+        radial-gradient(1600px 900px at -10% -40%, rgba(104, 148, 255, 0.28), transparent 60%),
+        radial-gradient(1400px 820px at 110% 10%, rgba(80, 140, 255, 0.2), transparent 65%),
+        linear-gradient(190deg, var(--bg-start) 0%, var(--bg-mid) 48%, var(--bg-end) 100%);
+    }
+
+
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-light);
+      line-height: 1.65;
+      background: var(--page-gradient);
+      background-repeat: no-repeat;
+      background-position: -10% -40%, 110% 10%, center top;
+      background-color: #0b1f63;
+      padding: 0 1.5rem 4rem;
+      min-height: 100%;
+    }
+
+    header {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 0 1.2rem;
+      color: var(--text-light);
+    }
+
+    header a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: var(--panel);
+      border-radius: 28px;
+      padding: clamp(2.2rem, 5vw, 3.2rem);
+      box-shadow: 0 24px 60px rgba(4, 16, 36, 0.32);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-body);
+      backdrop-filter: blur(16px);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: clamp(2rem, 4vw, 2.6rem);
+    }
+
+    h2 {
+      margin-top: 2.2rem;
+      font-size: clamp(1.4rem, 3vw, 1.75rem);
+    }
+
+    p {
+      color: var(--text-soft);
+      font-size: 1rem;
+      margin: 0 0 1rem;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: minmax(160px, 200px) minmax(0, 1fr);
+      gap: 0.6rem 1.2rem;
+      margin: 2rem 0 0;
+    }
+
+    dt {
+      font-weight: 600;
+      color: var(--text-body);
+    }
+
+    dd {
+      margin: 0;
+      color: var(--text-soft);
+    }
+
+    .note {
+      margin-top: 2.4rem;
+      padding: 1.2rem 1.4rem;
+      border-radius: 18px;
+      background: rgba(7, 19, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-soft);
+    }
+
+    footer {
+      max-width: 960px;
+      margin: 2.4rem auto 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Zurück zur Startseite</a>
+  </header>
+  <main>
+    <h1>Impressum</h1>
+    <p>Angaben gemäß § 5 TMG.</p>
+    <dl>
+      <dt>Unternehmen</dt>
+      <dd>Phantom Hedge UG (haftungsbeschränkt)</dd>
+      <dt>Adresse</dt>
+      <dd>Kolonnen Str. 8<br>10827 Berlin<br>Deutschland</dd>
+      <dt>Handelsregister</dt>
+      <dd>Amtsgericht Charlottenburg<br>HRB 274189B</dd>
+      <dt>Vertretungsberechtigte</dt>
+      <dd>Geschäftsführer: Ganapa, Sai Raghava Reddy</dd>
+      <dt>Umsatzsteuer-ID</dt>
+      <dd>DE454442255</dd>
+      <dt>Kontakt</dt>
+      <dd>E-Mail: <a href="mailto:info@phantomhedge.de">info@phantomhedge.de</a><br>Telefon: +49 (0)30 1234 5678</dd>
+    </dl>
+    <div class="note">
+      <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV ist Sai Raghava Reddy Ganapa, Kolonnen Str. 8, 10827 Berlin.</p>
+      <p>Bei Fragen zum Datenschutz verweisen wir auf unsere <a href="datenschutz.html">Datenschutz &amp; DSGVO Hinweise</a>.</p>
+    </div>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Phantom Hedge UG. Alle Rechte vorbehalten.</p>
+    <a href="datenschutz.html">Datenschutz</a>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
