@@ -1,5 +1,5 @@
 import { Linkedin, Twitter, Mail } from "lucide-react";
-import logoImage from "@assets/5708e2d101fbfbab27d9808cb219f2db50da8ca2.png";
+import logoImage from "@/assets/5708e2d101fbfbab27d9808cb219f2db50da8ca2.png";
 
 export function Footer() {
   return (
