@@ -3,20 +3,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Compliance & Audit images (merged from previous Compliance & Risk Management sections)
-import complianceImage1 from "@assets/dcccec9ab6fc81c23f11593ffb5a64564800a6e2.png";
-import complianceImage2 from "@assets/3dbddd27f22e60cc0fa9cc7acbe0bb424570d0b9.png";
-import complianceImage3 from "@assets/2afe487897bb97d369af307dc17bd7ca590766ab.png";
-import complianceImage4 from "@assets/b06630c699f506f612cf79de1434974d03b6c0e8.png";
-import complianceImage5 from "@assets/6474686fd9dda5d1219ebe4309b0b25932996911.png";
-import complianceImage6 from "@assets/c09701679cfa6963e3567cbd284870285f9f07d0.png";
-import complianceImage7 from "@assets/db3c7567ef379a68ae1131555d551898b7a1e0dc.png";
-import complianceImage8 from "@assets/c8c850617bd05139c071f614ec52fdff12e20677.png";
-import complianceImage9 from "@assets/636605eda623c68e24c650ba4e9072e5bb9fb18d.png";
+import complianceImage1 from "@/assets/dcccec9ab6fc81c23f11593ffb5a64564800a6e2.png";
+import complianceImage2 from "@/assets/3dbddd27f22e60cc0fa9cc7acbe0bb424570d0b9.png";
+import complianceImage3 from "@/assets/2afe487897bb97d369af307dc17bd7ca590766ab.png";
+import complianceImage4 from "@/assets/b06630c699f506f612cf79de1434974d03b6c0e8.png";
+import complianceImage5 from "@/assets/6474686fd9dda5d1219ebe4309b0b25932996911.png";
+import complianceImage6 from "@/assets/c09701679cfa6963e3567cbd284870285f9f07d0.png";
+import complianceImage7 from "@/assets/db3c7567ef379a68ae1131555d551898b7a1e0dc.png";
+import complianceImage8 from "@/assets/c8c850617bd05139c071f614ec52fdff12e20677.png";
+import complianceImage9 from "@/assets/636605eda623c68e24c650ba4e9072e5bb9fb18d.png";
 
 // Risk Management images (new screenshots)
-import riskMgmt1 from "@assets/d4efbc01affae8f2f69c829eb3e1894aa5890032.png";
-import riskMgmt2 from "@assets/94975f34315f48a1fa35144e8554e858ff0506e6.png";
-import riskMgmt3 from "@assets/9462767fad5c671c0132a49e93878f81b82286e0.png";
+import riskMgmt1 from "@/assets/d4efbc01affae8f2f69c829eb3e1894aa5890032.png";
+import riskMgmt2 from "@/assets/94975f34315f48a1fa35144e8554e858ff0506e6.png";
+import riskMgmt3 from "@/assets/9462767fad5c671c0132a49e93878f81b82286e0.png";
 
 const sliderSettings = {
   dots: true,
