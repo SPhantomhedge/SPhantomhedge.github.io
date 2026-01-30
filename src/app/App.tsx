@@ -1,29 +1,30 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "@/app/components/header";
-import { HeroSection } from "@/app/components/hero-section";
-import { FeaturesSection } from "@/app/components/features-section";
-import { ProductShowcase } from "@/app/components/product-showcase";
-import { BenefitsSection } from "@/app/components/benefits-section";
-import { CtaSection } from "@/app/components/cta-section";
 import { Footer } from "@/app/components/footer";
+import { HomePage } from "@/app/pages/home";
+import { FeaturesPage } from "@/app/pages/features";
+import { PlatformPage } from "@/app/pages/platform";
+import { AboutPage } from "@/app/pages/about";
+import { CareersPage } from "@/app/pages/careers";
+import { PrivacyPage } from "@/app/pages/privacy";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <HeroSection />
-        <section id="features">
-          <FeaturesSection />
-        </section>
-        <section id="platform">
-          <ProductShowcase />
-        </section>
-        <section id="solutions">
-          <BenefitsSection />
-        </section>
-        <CtaSection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/features" element={<FeaturesPage />} />
+            <Route path="/platform" element={<PlatformPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/careers" element={<CareersPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
