@@ -9,8 +9,11 @@ import { CareersPage } from "@/app/pages/careers";
 import { PrivacyPage } from "@/app/pages/privacy";
 
 export default function App() {
+  const baseUrl = import.meta.env.BASE_URL;
+  const normalizedBaseUrl = baseUrl.startsWith("/") ? baseUrl : "/";
+
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router basename={normalizedBaseUrl}>
       <div className="min-h-screen bg-white">
         <Header />
         <main>
