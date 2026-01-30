@@ -1,71 +1,63 @@
 import { Button } from "@/app/components/ui/button";
-import { ArrowRight, Shield } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import riskMgmt3 from "figma:asset/9462767fad5c671c0132a49e93878f81b82286e0.png";
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-950 via-blue-900 to-slate-900 text-white">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDIpIi8+PC9nPjwvc3ZnPg==')] opacity-30"></div>
+    <section className="relative bg-white overflow-hidden min-h-screen flex items-center">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(100,116,139,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(100,116,139,.02)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
       
-      <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 py-32 w-full">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Content */}
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 bg-blue-800/30 backdrop-blur-sm border border-blue-400/20 rounded-full px-4 py-2">
-              <Shield className="w-4 h-4 text-blue-300" />
-              <span className="text-sm text-blue-200">Enterprise Risk Management</span>
+            <div className="space-y-6">
+              <h1 className="text-6xl lg:text-7xl tracking-tight leading-[1.1] text-slate-900 font-medium">
+                <span className="block">AI-Powered</span>
+                <span className="block">Risk Management</span>
+                <span className="block text-blue-500">for Hedge Funds</span>
+              </h1>
+              
+              <p className="text-xl text-slate-600 max-w-xl leading-relaxed">
+                Advanced volatility forecasting, automated hedging, and comprehensive compliance management powered by institutional-grade AI technology.
+              </p>
             </div>
             
-            <h1 className="text-5xl lg:text-6xl tracking-tight">
-              <span className="block">AI-Powered</span>
-              <span className="block bg-gradient-to-r from-blue-200 to-cyan-200 bg-clip-text text-transparent">
-                Risk Management
-              </span>
-              <span className="block">for Hedge Funds</span>
-            </h1>
-            
-            <p className="text-xl text-blue-100 max-w-lg">
-              Advanced volatility forecasting, automated hedging, and comprehensive compliance management powered by institutional-grade AI technology.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/30"
+                className="bg-blue-500 hover:bg-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 font-medium"
               >
                 Request Demo
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-blue-300 text-blue-100 hover:bg-blue-800/50"
-              >
-                Learn More
-              </Button>
-            </div>
-            
-            <div className="flex flex-wrap gap-8 pt-8 border-t border-blue-800/50">
-              <div className="flex items-center gap-3">
-                <Shield className="w-5 h-5 text-blue-400" />
-                <div>
-                  <div className="text-2xl">AI-Based</div>
-                  <div className="text-sm text-blue-300">Forecasting & Hedging</div>
-                </div>
-              </div>
+              <Link to="/platform">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-2 border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 font-medium"
+                >
+                  Explore Platform
+                </Button>
+              </Link>
             </div>
           </div>
           
+          {/* Right Image */}
           <div className="relative lg:block hidden">
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-cyan-500/20 blur-3xl rounded-full"></div>
-            <div className="relative bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-8 shadow-2xl">
-              <div className="space-y-4">
-                <div className="h-48 bg-gradient-to-br from-blue-900/50 to-slate-800/50 rounded-lg border border-blue-400/20 flex items-center justify-center">
-                  <Shield className="w-24 h-24 text-blue-400/40" />
-                </div>
-                <div className="grid grid-cols-3 gap-3">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="h-16 bg-blue-900/30 rounded border border-blue-400/10"></div>
-                  ))}
-                </div>
+            {/* Background decoration */}
+            <div className="absolute -inset-8 bg-gradient-to-tr from-blue-100 via-slate-50 to-blue-50 blur-3xl opacity-50"></div>
+            
+            {/* Image container */}
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white transform hover:scale-[1.02] transition-transform duration-700">
+                <img 
+                  src={riskMgmt3} 
+                  alt="RiskOS Platform - Risk Decomposition"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>

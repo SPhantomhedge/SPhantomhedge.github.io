@@ -3,40 +3,38 @@ import { ArrowRight, Mail } from "lucide-react";
 
 export function CtaSection() {
   return (
-    <section className="py-24 bg-slate-50">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 rounded-2xl p-12 lg:p-16 text-white text-center shadow-2xl relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-30"></div>
+    <section className="relative py-32 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white overflow-hidden">
+      {/* Subtle pattern overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+      
+      <div className="relative max-w-4xl mx-auto px-6 text-center">
+        <div className="space-y-8">
+          <h2 className="text-5xl lg:text-6xl tracking-tight leading-tight font-medium">
+            <span className="block">Ready to transform</span>
+            <span className="block">your risk management?</span>
+          </h2>
           
-          <div className="relative space-y-8">
-            <h2 className="text-4xl lg:text-5xl">
-              Ready to Transform Your Risk Management?
-            </h2>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Join leading hedge funds in leveraging AI-powered risk management. Schedule a personalized demo with our team.
-            </p>
-            
-            <div className="flex flex-wrap gap-4 justify-center pt-4">
-              <Button 
-                size="lg" 
-                className="bg-white text-blue-900 hover:bg-blue-50 shadow-lg"
-              >
-                Schedule Demo
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white/10"
-              >
-                <Mail className="mr-2 w-4 h-4" />
-                Contact Sales
-              </Button>
-            </div>
-            
-            <div className="pt-8 text-blue-200 text-sm">
-              Trusted by institutional investors managing over $50B in assets
-            </div>
+          <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed">
+            Join leading hedge funds leveraging AI-powered risk infrastructure to maximize alpha and ensure regulatory compliance.
+          </p>
+          
+          <div className="flex flex-wrap gap-4 justify-center pt-4">
+            <Button 
+              size="lg" 
+              className="bg-white text-blue-500 hover:bg-blue-50 shadow-xl hover:shadow-2xl transition-all duration-300 font-medium"
+            >
+              Schedule Demo
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-500 transition-all duration-300 font-medium"
+              onClick={() => window.location.href = 'mailto:info@phantomhedge.de?subject=Contact%20Request'}
+            >
+              <Mail className="mr-2 w-4 h-4" />
+              Contact Sales
+            </Button>
           </div>
         </div>
       </div>
