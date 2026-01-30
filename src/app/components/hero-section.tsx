@@ -1,7 +1,7 @@
 import { Button } from "@/app/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import riskMgmt3 from "figma:asset/9462767fad5c671c0132a49e93878f81b82286e0.png";
+import riskMgmt3 from "@/assets/9462767fad5c671c0132a49e93878f81b82286e0.png";
 
 export function HeroSection() {
   return (
