@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/app/components/ui/button";
-import logoImage from "figma:asset/5708e2d101fbfbab27d9808cb219f2db50da8ca2.png";
-import logoText from "figma:asset/eafe7f001b3bfacb3c565ee9fb1c60ab97d51f24.png";
+import logoImage from "@/assets/5708e2d101fbfbab27d9808cb219f2db50da8ca2.png";
+import logoText from "@/assets/eafe7f001b3bfacb3c565ee9fb1c60ab97d51f24.png";
 
 export function Header() {
   return (

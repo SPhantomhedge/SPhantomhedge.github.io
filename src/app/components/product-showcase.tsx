@@ -4,19 +4,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Compliance & Audit images
-import complianceOverview from "figma:asset/491216e9ed3dac08820527b3d58ea42a202fead1.png";
-import aiModelCompliance from "figma:asset/2b64b2814d42b2e8d0ba0b1b35c40b90e8685542.png";
-import doraMonitoring from "figma:asset/19db3913c1d573d3ee76a6143b36e01117ebe8e5.png";
+import complianceOverview from "@/assets/491216e9ed3dac08820527b3d58ea42a202fead1.png";
+import aiModelCompliance from "@/assets/2b64b2814d42b2e8d0ba0b1b35c40b90e8685542.png";
+import doraMonitoring from "@/assets/19db3913c1d573d3ee76a6143b36e01117ebe8e5.png";
 
 // Risk Management images
-import aiSimulation from "figma:asset/f5762359bfbcb0b10162367f1369fe9ada3d3d91.png";
-import aiCausality from "figma:asset/e3706ea70242f2c919aab9509eb0f79b41963fc4.png";
-import riskDecomposition from "figma:asset/6d34c3947e7ab1432ddaa3f3f071917f68229641.png";
+import aiSimulation from "@/assets/f5762359bfbcb0b10162367f1369fe9ada3d3d91.png";
+import aiCausality from "@/assets/e3706ea70242f2c919aab9509eb0f79b41963fc4.png";
+import riskDecomposition from "@/assets/6d34c3947e7ab1432ddaa3f3f071917f68229641.png";
 
 // Monitoring & Hedging images
-import alertsConfig from "figma:asset/0b7f6c8aca120df73be8b8603b9a4c95687eb8f4.png";
-import prePostHedge from "figma:asset/23b35a187996874db9233e1ebb2d35ad532c8f18.png";
-import hedgeResults from "figma:asset/8dbacd66400a24c21ee285fe32a8184e29394159.png";
+import alertsConfig from "@/assets/0b7f6c8aca120df73be8b8603b9a4c95687eb8f4.png";
+import prePostHedge from "@/assets/23b35a187996874db9233e1ebb2d35ad532c8f18.png";
+import hedgeResults from "@/assets/8dbacd66400a24c21ee285fe32a8184e29394159.png";
 
 const sliderSettings = {
   dots: true,
