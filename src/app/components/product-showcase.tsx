@@ -1,55 +1,16 @@
 import { useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-// Compliance & Audit images
-import complianceOverview from "@/assets/491216e9ed3dac08820527b3d58ea42a202fead1.png";
-import aiModelCompliance from "@/assets/2b64b2814d42b2e8d0ba0b1b35c40b90e8685542.png";
-import doraMonitoring from "@/assets/19db3913c1d573d3ee76a6143b36e01117ebe8e5.png";
 
 // Risk Management images
-import aiSimulation from "@/assets/f5762359bfbcb0b10162367f1369fe9ada3d3d91.png";
-import aiCausality from "@/assets/e3706ea70242f2c919aab9509eb0f79b41963fc4.png";
-import riskDecomposition from "@/assets/6d34c3947e7ab1432ddaa3f3f071917f68229641.png";
+import aiSimulation from "figma:asset/f5762359bfbcb0b10162367f1369fe9ada3d3d91.png";
+import aiCausality from "figma:asset/e3706ea70242f2c919aab9509eb0f79b41963fc4.png";
+import riskDecomposition from "figma:asset/6d34c3947e7ab1432ddaa3f3f071917f68229641.png";
 
 // Monitoring & Hedging images
-import alertsConfig from "@/assets/0b7f6c8aca120df73be8b8603b9a4c95687eb8f4.png";
-import prePostHedge from "@/assets/23b35a187996874db9233e1ebb2d35ad532c8f18.png";
-import hedgeResults from "@/assets/8dbacd66400a24c21ee285fe32a8184e29394159.png";
-
-const sliderSettings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  arrows: true,
-};
+import alertsConfig from "figma:asset/0b7f6c8aca120df73be8b8603b9a4c95687eb8f4.png";
+import prePostHedge from "figma:asset/23b35a187996874db9233e1ebb2d35ad532c8f18.png";
+import hedgeResults from "figma:asset/8dbacd66400a24c21ee285fe32a8184e29394159.png";
 
 const sections = {
-  compliance: {
-    title: "Compliance & Audit",
-    description: "Comprehensive DORA and EU AI Act compliance management with automated model monitoring, attestations, and audit trails.",
-    panels: [
-      {
-        src: complianceOverview,
-        title: "Compliance Overview",
-        description: "Real-time compliance scoring across all policy areas with trend analysis and actionable insights."
-      },
-      {
-        src: aiModelCompliance,
-        title: "AI Model Compliance",
-        description: "Complete lifecycle management and monitoring of AI models with compliance tracking and risk classification."
-      },
-      {
-        src: doraMonitoring,
-        title: "DORA Monitoring",
-        description: "ICT risk management framework with detailed control area tracking and automated regulatory compliance checks."
-      }
-    ],
-  },
   riskManagement: {
     title: "Risk Management",
     description: "Advanced AI-powered risk analytics with forward-looking simulations and comprehensive portfolio risk decomposition.",
@@ -95,7 +56,7 @@ const sections = {
 };
 
 export function ProductShowcase() {
-  const [activeSection, setActiveSection] = useState<'compliance' | 'riskManagement' | 'monitoringHedging'>('compliance');
+  const [activeSection, setActiveSection] = useState<'riskManagement' | 'monitoringHedging'>('riskManagement');
   
   const currentSection = sections[activeSection];
 
@@ -104,25 +65,15 @@ export function ProductShowcase() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-5xl lg:text-6xl mb-6 text-slate-900 tracking-tight">
-            RiskOS Platform
+            The Decision Layer
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed">
-            A comprehensive risk management operating system designed for the demands of modern hedge funds and institutional investors.
+            A conviction-preserving decision layer that separates thesis-driven risk from systematic noise—enabling hedge funds and asset managers to hedge what they don't understand while protecting what they believe in.
           </p>
         </div>
         
         {/* Tab Navigation */}
         <div className="flex flex-wrap justify-center gap-3 mb-16">
-          <button
-            onClick={() => setActiveSection('compliance')}
-            className={`px-8 py-4 rounded-full text-base font-medium transition-all duration-300 ${
-              activeSection === 'compliance'
-                ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/30'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-            }`}
-          >
-            Compliance & Audit
-          </button>
           <button
             onClick={() => setActiveSection('riskManagement')}
             className={`px-8 py-4 rounded-full text-base font-medium transition-all duration-300 ${

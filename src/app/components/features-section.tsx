@@ -1,35 +1,35 @@
-import { Brain, Shield, Zap, LineChart, AlertCircle, FileText } from "lucide-react";
+import { Target, TrendingDown, Layers, Shield, Activity, Brain } from "lucide-react";
 
 const features = [
   {
-    icon: Brain,
-    title: "AI-Powered Forecasting",
-    description: "Advanced machine learning models for volatility prediction and regime detection with industry-leading accuracy.",
+    icon: Target,
+    title: "Horizon Preservation",
+    description: "Prevents macro shocks from extending your thesis realization timelines—keep strategies aligned with intended holding periods without forced premature exits.",
   },
   {
-    icon: Zap,
-    title: "Automated Hedging",
-    description: "Real-time portfolio protection with intelligent automation that responds instantly to market conditions.",
+    icon: TrendingDown,
+    title: "Drawdown Control Without Killing Conviction",
+    description: "Reduces deep drawdowns caused by non-thesis risks while allowing you to hold core positions instead of trimming under stress.",
+  },
+  {
+    icon: Layers,
+    title: "Separation of Alpha vs Noise",
+    description: "Distinguish idiosyncratic (thesis-driven) risk from systematic (macro/liquidity) noise—hedge what you don't understand, keep what you believe in.",
   },
   {
     icon: Shield,
-    title: "Compliance Management",
-    description: "Complete DORA and EU AI Act compliance with automated reporting, attestations, and audit trails.",
+    title: "Protection Against Forced Market Dynamics",
+    description: "Shield your portfolio from forced selling by leveraged players, correlation spikes, and liquidity-driven dislocations—avoid being collateral damage.",
   },
   {
-    icon: LineChart,
-    title: "Risk Decomposition",
-    description: "Comprehensive portfolio analytics with multi-factor risk attribution and exposure monitoring.",
+    icon: Activity,
+    title: "Path Efficiency Improvement",
+    description: "Smooth PnL trajectory without requiring position exits—improve time underwater, recovery speed, and make returns more usable and predictable.",
   },
   {
-    icon: AlertCircle,
-    title: "Threshold Monitoring",
-    description: "Configurable risk thresholds with real-time alerting via email, SMS, and Slack integration.",
-  },
-  {
-    icon: FileText,
-    title: "Audit & Reporting",
-    description: "Complete audit trails with automated report generation for regulatory compliance and internal review.",
+    icon: Brain,
+    title: "Structured Decision Framework",
+    description: "Avoid discretionary panic hedging and late-stage de-risking—answer 'Is this a thesis problem or a market problem?' with clarity under stress.",
   },
 ];
 
@@ -39,10 +39,10 @@ export function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-5xl lg:text-6xl mb-6 text-slate-900 tracking-tight">
-            Enterprise-Grade Risk Management
+            Decision Intelligence for Conviction-Driven Funds
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed">
-            Built for institutional investors who demand precision, reliability, and compliance in their risk management infrastructure.
+            A decision layer designed specifically for hedge funds and asset managers where deep sector expertise and long-term conviction drive alpha—not macro timing or systematic beta harvesting.
           </p>
         </div>
         

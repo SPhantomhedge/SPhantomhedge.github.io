@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/app/components/ui/button";
-import logoImage from "@/assets/5708e2d101fbfbab27d9808cb219f2db50da8ca2.png";
-import logoText from "@/assets/eafe7f001b3bfacb3c565ee9fb1c60ab97d51f24.png";
+import logoImage from "figma:asset/5708e2d101fbfbab27d9808cb219f2db50da8ca2.png";
+import logoText from "figma:asset/eafe7f001b3bfacb3c565ee9fb1c60ab97d51f24.png";
 
 export function Header() {
   return (
@@ -37,15 +37,15 @@ export function Header() {
           </nav>
           
           <div className="flex items-center gap-4">
-            <Button 
-              variant="ghost" 
-              className="hidden md:inline-flex text-slate-700 hover:text-blue-500"
+            <Button
+              variant="ghost"
+              className="hidden md:inline-flex text-blue-500 hover:text-blue-600"
               onClick={() => window.location.href = 'mailto:info@phantomhedge.de?subject=Contact%20Request'}
             >
               Contact Us
             </Button>
             <Button className="bg-blue-500 hover:bg-blue-600 text-white">
-              Request Demo
+              Apply for Design Partner Access
             </Button>
           </div>
         </div>

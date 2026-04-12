@@ -10,25 +10,25 @@ export function CtaSection() {
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         <div className="space-y-8">
           <h2 className="text-5xl lg:text-6xl tracking-tight leading-tight font-medium">
-            <span className="block">Ready to transform</span>
-            <span className="block">your risk management?</span>
+            <span className="block">Protect your conviction,</span>
+            <span className="block">not your alpha</span>
           </h2>
-          
+
           <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed">
-            Join leading hedge funds leveraging AI-powered risk infrastructure to maximize alpha and ensure regulatory compliance.
+            Join pioneering hedge funds and asset managers as a design partner—help shape the future of conviction-preserving decision intelligence while getting early access.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-blue-500 hover:bg-blue-50 shadow-xl hover:shadow-2xl transition-all duration-300 font-medium"
             >
-              Schedule Demo
+              Apply for Design Partner Access
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
+            <Button
+              size="lg"
+              variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-blue-500 transition-all duration-300 font-medium"
               onClick={() => window.location.href = 'mailto:info@phantomhedge.de?subject=Contact%20Request'}
             >

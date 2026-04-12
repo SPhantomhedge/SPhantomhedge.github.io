@@ -2,30 +2,30 @@ import { Check } from "lucide-react";
 
 const benefits = [
   {
-    category: "For Risk Managers",
-    items: [
-      "Real-time portfolio risk monitoring and decomposition",
-      "AI-powered regime detection and volatility forecasting",
-      "Automated hedging recommendations with backtesting",
-      "Comprehensive audit trails for all decisions",
-    ],
-  },
-  {
-    category: "For Compliance Officers",
-    items: [
-      "Complete DORA and EU AI Act compliance coverage",
-      "Automated attestation and certification management",
-      "Third-party risk monitoring and due diligence",
-      "One-click regulatory report generation",
-    ],
-  },
-  {
     category: "For Portfolio Managers",
     items: [
-      "Multi-factor risk attribution and exposure analysis",
-      "Stress testing and scenario analysis tools",
-      "Integration with existing portfolio systems",
-      "Customizable alerts and threshold monitoring",
+      "Maintain core positions through macro volatility without premature trimming",
+      "Clear separation: Is this a thesis problem or a market problem?",
+      "Avoid panic decisions and late-stage de-risking that lock in losses",
+      "Keep strategies aligned with intended 12-24 month holding periods",
+    ],
+  },
+  {
+    category: "For Risk Managers",
+    items: [
+      "Prevent macro shocks from extending thesis realization timelines",
+      "Control drawdowns (-30% → -60%) without killing conviction",
+      "Smooth PnL trajectory—improve time underwater and recovery speed",
+      "Shield portfolio from forced selling and correlation spikes",
+    ],
+  },
+  {
+    category: "For LPs & Investors",
+    items: [
+      "Reduced visible volatility decreases redemption pressure",
+      "Faster recovery cycles from shallower drawdowns",
+      "More predictable returns improve long-term capital trust",
+      "Consistent risk framework across different thematic strategies",
     ],
   },
 ];
@@ -36,10 +36,10 @@ export function BenefitsSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-5xl lg:text-6xl mb-6 text-slate-900 tracking-tight">
-            Built for Institutional Excellence
+            When Conviction Meets Volatility
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed">
-            Designed to meet the rigorous demands of hedge funds, asset managers, and institutional investors.
+            A decision layer for hedge funds and asset managers where deep sector expertise drives strategy—and macro noise shouldn't determine outcomes.
           </p>
         </div>
         

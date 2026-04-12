@@ -1,7 +1,7 @@
 import { Button } from "@/app/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import riskMgmt3 from "@/assets/9462767fad5c671c0132a49e93878f81b82286e0.png";
+import riskMgmt3 from "figma:asset/9462767fad5c671c0132a49e93878f81b82286e0.png";
 
 export function HeroSection() {
   return (
@@ -15,28 +15,28 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-6xl lg:text-7xl tracking-tight leading-[1.1] text-slate-900 font-medium">
-                <span className="block">AI-Powered</span>
-                <span className="block">Risk Management</span>
-                <span className="block text-blue-500">for Hedge Funds</span>
+                <span className="block">Preserve Conviction,</span>
+                <span className="block">Neutralize</span>
+                <span className="block text-blue-500">Non-Thesis Risk</span>
               </h1>
-              
+
               <p className="text-xl text-slate-600 max-w-xl leading-relaxed">
-                Advanced volatility forecasting, automated hedging, and comprehensive compliance management powered by institutional-grade AI technology.
+                A decision layer for hedge funds and asset managers—helping you maintain core positions through macro volatility by hedging systematic noise while protecting the conviction that drives alpha.
               </p>
             </div>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-blue-500 hover:bg-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 font-medium"
               >
-                Request Demo
+                Apply for Design Partner Access
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
               <Link to="/platform">
-                <Button 
-                  size="lg" 
-                  variant="outline" 
+                <Button
+                  size="lg"
+                  variant="outline"
                   className="border-2 border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 font-medium"
                 >
                   Explore Platform

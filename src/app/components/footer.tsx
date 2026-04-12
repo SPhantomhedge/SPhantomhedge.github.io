@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Twitter, Mail } from "lucide-react";
-import logoImage from "@/assets/5708e2d101fbfbab27d9808cb219f2db50da8ca2.png";
+import logoImage from "figma:asset/5708e2d101fbfbab27d9808cb219f2db50da8ca2.png";
 
 export function Footer() {
   return (
@@ -13,7 +13,7 @@ export function Footer() {
               <span className="text-xl text-white font-medium">Phantom Hedge</span>
             </Link>
             <p className="text-sm text-slate-400 mb-4">
-              AI-powered risk management for institutional investors and hedge funds.
+              A decision layer for hedge funds and asset managers—preserving conviction while neutralizing non-thesis risk.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
@@ -44,10 +44,10 @@ export function Footer() {
           <div>
             <h3 className="text-white mb-4">Solutions</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Hedge Funds</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Asset Managers</a></li>
+              <li><a href="#" className="hover:text-blue-400 transition-colors">Thematic Funds</a></li>
+              <li><a href="#" className="hover:text-blue-400 transition-colors">Sector Specialists</a></li>
+              <li><a href="#" className="hover:text-blue-400 transition-colors">Long-Conviction Strategies</a></li>
               <li><a href="#" className="hover:text-blue-400 transition-colors">Family Offices</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Institutional Investors</a></li>
             </ul>
           </div>
           
