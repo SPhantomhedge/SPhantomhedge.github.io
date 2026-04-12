@@ -21,7 +21,7 @@ export function HeroSection() {
               </h1>
 
               <p className="text-xl text-slate-600 max-w-xl leading-relaxed">
-                A decision layer for hedge funds and asset managers—helping you maintain core positions through macro volatility by hedging systematic noise while protecting the conviction that drives alpha.
+                A decision layer for hedge funds and asset managers to help maintain core positions through macro volatility. Hedge systematic noise while protecting the conviction that drives alpha.
               </p>
             </div>
             

@@ -68,7 +68,7 @@ export function ProductShowcase() {
             The Decision Layer
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed">
-            A conviction-preserving decision layer that separates thesis-driven risk from systematic noise—enabling hedge funds and asset managers to hedge what they don't understand while protecting what they believe in.
+            A conviction-preserving decision layer that separates thesis-driven risk from systematic noise. This enables hedge funds and asset managers to hedge systematic risks while protecting what they believe in.
           </p>
         </div>
         

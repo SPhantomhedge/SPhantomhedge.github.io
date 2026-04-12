@@ -4,32 +4,32 @@ const features = [
   {
     icon: Target,
     title: "Horizon Preservation",
-    description: "Prevents macro shocks from extending your thesis realization timelines—keep strategies aligned with intended holding periods without forced premature exits.",
+    description: "Prevents macro shocks from extending your thesis realization timelines to keep strategies aligned with intended holding periods without forced premature exits.",
   },
   {
     icon: TrendingDown,
-    title: "Drawdown Control Without Killing Conviction",
+    title: "Drawdown Control",
     description: "Reduces deep drawdowns caused by non-thesis risks while allowing you to hold core positions instead of trimming under stress.",
   },
   {
     icon: Layers,
     title: "Separation of Alpha vs Noise",
-    description: "Distinguish idiosyncratic (thesis-driven) risk from systematic (macro/liquidity) noise—hedge what you don't understand, keep what you believe in.",
+    description: "Distinguish idiosyncratic (thesis-driven) risk from systematic (macro/liquidity) noise. Hedge over-reactions, keep what you believe in.",
   },
   {
     icon: Shield,
     title: "Protection Against Forced Market Dynamics",
-    description: "Shield your portfolio from forced selling by leveraged players, correlation spikes, and liquidity-driven dislocations—avoid being collateral damage.",
+    description: "Shield your portfolio from forced selling by leveraged players, correlation spikes, and liquidity-driven dislocations to avoid being collateral damage.",
   },
   {
     icon: Activity,
     title: "Path Efficiency Improvement",
-    description: "Smooth PnL trajectory without requiring position exits—improve time underwater, recovery speed, and make returns more usable and predictable.",
+    description: "Smooth PnL trajectory without requiring position exits to improve time underwater, recovery speed, and make returns more usable and predictable.",
   },
   {
     icon: Brain,
     title: "Structured Decision Framework",
-    description: "Avoid discretionary panic hedging and late-stage de-risking—answer 'Is this a thesis problem or a market problem?' with clarity under stress.",
+    description: "Avoid discretionary panic hedging and late-stage de-risking by providing a clear framework for decision-making under stress.",
   },
 ];
 
@@ -42,7 +42,7 @@ export function FeaturesSection() {
             Decision Intelligence for Conviction-Driven Funds
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed">
-            A decision layer designed specifically for hedge funds and asset managers where deep sector expertise and long-term conviction drive alpha—not macro timing or systematic beta harvesting.
+            A decision layer designed specifically for hedge funds and asset managers where deep sector expertise and long-term conviction drive alpha.
           </p>
         </div>
         

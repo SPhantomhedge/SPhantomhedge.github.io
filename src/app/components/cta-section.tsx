@@ -15,7 +15,7 @@ export function CtaSection() {
           </h2>
 
           <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed">
-            Join pioneering hedge funds and asset managers as a design partner—help shape the future of conviction-preserving decision intelligence while getting early access.
+            Join pioneering hedge funds and asset managers as a design partner to shape the future of conviction-preserving decision intelligence with early access.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-4">

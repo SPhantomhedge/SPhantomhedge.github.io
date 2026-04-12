@@ -7,15 +7,15 @@ const benefits = [
       "Maintain core positions through macro volatility without premature trimming",
       "Clear separation: Is this a thesis problem or a market problem?",
       "Avoid panic decisions and late-stage de-risking that lock in losses",
-      "Keep strategies aligned with intended 12-24 month holding periods",
+      "Keep strategies aligned with intended holding periods",
     ],
   },
   {
     category: "For Risk Managers",
     items: [
       "Prevent macro shocks from extending thesis realization timelines",
-      "Control drawdowns (-30% → -60%) without killing conviction",
-      "Smooth PnL trajectory—improve time underwater and recovery speed",
+      "Control drawdowns without killing conviction",
+      "Smooth PnL trajectory without requiring position exits",
       "Shield portfolio from forced selling and correlation spikes",
     ],
   },
@@ -39,7 +39,7 @@ export function BenefitsSection() {
             When Conviction Meets Volatility
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed">
-            A decision layer for hedge funds and asset managers where deep sector expertise drives strategy—and macro noise shouldn't determine outcomes.
+            A decision layer for hedge funds and asset managers where deep sector expertise drives strategy while macro noise shouldn't determine outcomes.
           </p>
         </div>
         
