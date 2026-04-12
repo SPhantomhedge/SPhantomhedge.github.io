@@ -10,6 +10,7 @@ export function AboutSection() {
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed">
             A decision layer for hedge funds and asset managers where conviction drives alpha and macro noise shouldn't determine outcomes.
+          </p>
         </div>
 
         <div className="bg-gradient-to-br from-slate-50 to-blue-50/30 rounded-3xl p-12 lg:p-16 border border-slate-200 mb-16">
